@@ -1,20 +1,13 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="container">
+    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <p>Remplissez votre profil, puis profitez de la sélection 
+    personnalisé qu'on vous a préparé en fonction 
+    de vos réponses !</p>
+  
+  <button class="btn" [routerLink]="['/home']">Démarrez l'expérience</button>
+  <button class="btn" [routerLink]="['/login']">Connexion</button>
+</div>  
 </ion-content>

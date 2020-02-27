@@ -1,0 +1,64 @@
+.img-slides {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
+
+.container{
+    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(50, 41, 77) 100%) !important;
+    height: 100%;
+    width: 100%;
+}
+
+p {
+    display: block;
+    padding: 10px;
+    font-size: small;
+    color: white;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+
+}
+ion-input{
+    width: 90%;
+    padding: 5px;
+    background: #07070741;
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    font-size: 10px;
+}
+.btn {
+    width: 90%;
+    padding: 15px;
+    background: linear-gradient(360deg, #5055a0, #5055a0);
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+}
+.hr {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 10px;
+    width: 40%;
+  }
+
+.hrs {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 10px;
+    width: 40%;
+  }
+p{
+    color: grey;
+    margin-left: 180px;
+    font-size: xx-small;
+}
