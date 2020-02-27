@@ -2,17 +2,18 @@
   <div class="container">
     <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
     <ion-input placeholder="E-mail">   </ion-input>
-    <ion-input placeholder="Password">     </ion-input>
-    <p>Mot de passe oublié</p>
+    <ion-input placeholder="Password" type="password">     </ion-input>
+    <p class="mdp">Mot de passe oublié</p>
 
-  
+    
   
   <button class="btn" [routerLink]="['/login']">Connexion</button>
-  <div class="hr"> </div>   <div class="hrs"> </div>
-
-  <ion-icon name="logo-facebook"></ion-icon>
-  <ion-icon name="logo-googleplus"></ion-icon>
-  <ion-icon name="logo-twitter"></ion-icon>
+  <p class="ou"> Ou </p>
+  <div class="hr"> </div>
+  <p class="reseaux">Connexion avec les réseaux sociaux</p>  
+  <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+  <ion-icon name="logo-google" class="google"></ion-icon>
+  <ion-icon name="logo-twitter" class="twitter"></ion-icon>
 
 </div>  
 </ion-content>

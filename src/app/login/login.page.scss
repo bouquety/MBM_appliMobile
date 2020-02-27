@@ -6,7 +6,7 @@
 }
 
 .container{
-    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(50, 41, 77) 100%) !important;
+    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
     height: 100%;
     width: 100%;
 }
@@ -47,18 +47,35 @@ ion-input{
 .hr {
     border-bottom: 1px solid #ccc;
     margin: 10px 0;
-    margin-left: 10px;
+    margin-left: 80px;
     width: 40%;
   }
 
-.hrs {
-    border-bottom: 1px solid #ccc;
-    margin: 10px 0;
-    margin-left: 10px;
-    width: 40%;
-  }
-p{
-    color: grey;
+
+.mdp{
+    color: white;
     margin-left: 180px;
     font-size: xx-small;
+}
+
+.ou {
+      color: white;
+      margin: -10px;
+    margin-left: 130px;
+    font-size: xx-small;
+}
+.reseaux{
+    color: white;
+    margin: -10px;
+    margin-left: 50px;
+    font-size: xx-small;
+}
+
+.facebook{
+    margin-left: 80px;
+    margin-right: 40px;
+}
+
+.google{
+    margin-right: 40px;
 }
