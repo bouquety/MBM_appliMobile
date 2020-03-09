@@ -8,6 +8,30 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'accueil',
+    loadChildren: () => import('./accueil/accueil.module').then( m => m.AccueilPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'register-deux',
+    loadChildren: () => import('./register-deux/register-deux.module').then( m => m.RegisterDeuxPageModule)
+  },
+  {
+    path: 'register-trois',
+    loadChildren: () => import('./register-trois/register-trois.module').then( m => m.RegisterTroisPageModule)
+  },
+  {
+    path: 'register-quatre',
+    loadChildren: () => import('./register-quatre/register-quatre.module').then( m => m.RegisterQuatrePageModule)
+  },
+  {
+    path: 'register-cinq',
+    loadChildren: () => import('./register-cinq/register-cinq.module').then( m => m.RegisterCinqPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,27 @@
+.main{
+    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+
+}
+
+.btn {
+    width: 90%;
+    padding: 15px;
+    background: linear-gradient(360deg, #5055a0, #5055a0);
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+  }
+
+  .img-slides {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}

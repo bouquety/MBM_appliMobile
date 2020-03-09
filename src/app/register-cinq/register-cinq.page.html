@@ -1,0 +1,21 @@
+<ion-content>
+  <div class="main">
+    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+    <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+
+    <p> Comment vous habillez-vous pour aller travailler ?</p>
+    <ion-grid>
+      <ion-radio-group>
+      <ion-row>
+        <ion-label>Près du corps</ion-label>
+        <ion-radio value="small"></ion-radio>
+        <ion-label>Droit</ion-label>
+        <ion-radio value="Medium"></ion-radio>
+        <ion-label>Ample</ion-label>
+        <ion-radio value="Large"></ion-radio>
+      </ion-row>
+      </ion-radio-group>
+    </ion-grid>
+    <button class="btn" [routerLink]="['/register-cinq']">Continuer</button>
+</div>  
+</ion-content>
