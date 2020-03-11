@@ -1,11 +1,148 @@
 
 .main{
-    background: linear-gradient(197deg, rgb(189, 173, 233) 0%, rgba(189, 173, 233) 13.5%, rgba(189, 173, 233) 33.33%, rgb(29, 23, 44) 100%) !important;
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
     height: 100%;
     width: 100%;
     display: table;
-
 }
 
+.img-slides {
+    width: 40%;
+    height: auto;
+    display: block;
+    padding: 15px;
+    margin-left: 95px;
+}
 
+.chic_layout{
+    opacity: 0.6;
+    height: 150px;
+    width: 100%;
+}
+p{
+    color: white;
+}
 
+.txt_chic {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+
+  .txt{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+
+  }
+
+  .categorie{
+    background: #ffffff;
+    position: absolute;
+    top: 43%;
+    height: 35px;
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+
+  .categorie p {
+      color: gray;
+      display: inline;
+      padding: 9px;
+  }
+
+  .categorie .active{
+      color: #250A8A;
+      border-bottom: 1px solid #250A8A;
+      padding-bottom: 13px;
+      margin-left: 5px;
+  }
+
+  .txt_veste{
+      color: grey;
+      font-size: 22px;
+      margin-left: 25px;
+      font-weight:bold;
+      margin: 5px 0px 0px 25px;
+    }
+
+    .txt_pantalon{
+      color: grey;
+      font-size: 22px;
+      margin-left: 25px;
+      font-weight:bold;
+      margin: 0px 0px 0px 25px;
+    }
+
+    .txt_chaussure{
+      color: grey;
+      font-size: 22px;
+      margin-left: 25px;
+      font-weight:bold;
+      margin: 0px 0px 0px 25px;
+    }
+
+  .viewall{
+    margin-left: 230px;
+    font-size: 10px;
+    position: absolute;
+    top: 55%;
+    color: #250A8A;
+}
+
+.viewall_pantalon{
+  margin-left: 230px;
+  font-size: 10px;
+  color: #250A8A;
+}
+
+.viewall_chaussure{
+  margin-left: 230px;
+  font-size: 10px;
+  color: #250A8A;
+}
+
+  ion-label.active{
+    color: #250A8A;
+  }
+
+  ion-icon.active{
+    color: #250A8A;
+  }
+
+  ion-card{
+      width: 115px;
+      box-shadow: 5px 2px 2px rgb(90, 90, 90);
+      border-radius: 8px;
+      background: white;
+
+  }
+
+  
+  ion-card-subtitle{
+    font-size: 11px;
+  }
+ 
+  ion-card-subtitle.prix{
+    font-weight:bold;
+  }
+
+  .hr {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 20px;
+    width: 30%;
+  }
+  .hrs {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 30%;
+    margin-left: 75px;
+  }
+
+  
+  
