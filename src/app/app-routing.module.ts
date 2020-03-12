@@ -32,6 +32,10 @@ const routes: Routes = [
     path: 'register-cinq',
     loadChildren: () => import('./register-cinq/register-cinq.module').then( m => m.RegisterCinqPageModule)
   },
+  {
+    path: 'vestes-chic',
+    loadChildren: () => import('./vestes-chic/vestes-chic.module').then( m => m.VestesChicPageModule)
+  },
 ];
 
 @NgModule({
