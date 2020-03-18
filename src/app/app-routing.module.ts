@@ -36,6 +36,10 @@ const routes: Routes = [
     path: 'vestes-chic',
     loadChildren: () => import('./vestes-chic/vestes-chic.module').then( m => m.VestesChicPageModule)
   },
+  {
+    path: 'veste-chic-produit',
+    loadChildren: () => import('./veste-chic-produit/veste-chic-produit.module').then( m => m.VesteChicProduitPageModule)
+  },
 ];
 
 @NgModule({

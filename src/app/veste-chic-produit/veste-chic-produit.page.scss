@@ -1,0 +1,58 @@
+.main{
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.image_produit{
+    margin-top: 20px;
+}
+.description {
+    color: grey;
+    font-size: 15px;
+    top: 89%;
+    position: absolute;
+}
+
+.prix{
+    position: absolute;
+    font-weight: bold;
+    color: dimgray; 
+}
+
+.note{
+    margin-left: 240px;
+    margin-top: 10px;
+    background: #9292EA;
+    border-radius: 20px;
+    color: white;
+    width: 19%;
+    position: absolute;
+}
+
+.note .note_pr {
+    margin-left: 28px;
+    margin-top: -21px;
+    font-size: 14px;
+    position: absolute;
+}
+
+.detail_note{
+    background: #ffffff;
+    position: absolute;
+    top: 43%;
+    height: 35px;
+}
+
+.detail_note p {
+    color: gray;
+    display: inline;
+    padding: 9px;
+}
+
+.detail_note .active{
+    color: #250A8A;
+    border-bottom: 1px solid #250A8A;
+    padding-bottom: 13px;
+    margin-left: 5px;
+}
