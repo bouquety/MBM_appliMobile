@@ -40,6 +40,10 @@ const routes: Routes = [
     path: 'veste-chic-produit',
     loadChildren: () => import('./veste-chic-produit/veste-chic-produit.module').then( m => m.VesteChicProduitPageModule)
   },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
 ];
 
 @NgModule({

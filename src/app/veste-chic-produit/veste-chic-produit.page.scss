@@ -7,26 +7,15 @@
 .image_produit{
     margin-top: 20px;
 }
-.description {
-    color: grey;
-    font-size: 15px;
-    top: 89%;
-    position: absolute;
-}
 
-.prix{
-    position: absolute;
-    font-weight: bold;
-    color: dimgray; 
-}
 
 .note{
-    margin-left: 240px;
+    margin-left: 229px;
     margin-top: 10px;
     background: #9292EA;
     border-radius: 20px;
     color: white;
-    width: 19%;
+    width: 18%;
     position: absolute;
 }
 
@@ -37,22 +26,20 @@
     position: absolute;
 }
 
-.detail_note{
-    background: #ffffff;
+.taille{
     position: absolute;
-    top: 43%;
-    height: 35px;
+    top: 94%;
+    color: grey;
+}
+.description {
+    color: grey;
+    font-size: 15px;
+    top: 84%;
+    position: absolute;
 }
 
-.detail_note p {
-    color: gray;
-    display: inline;
-    padding: 9px;
-}
-
-.detail_note .active{
-    color: #250A8A;
-    border-bottom: 1px solid #250A8A;
-    padding-bottom: 13px;
-    margin-left: 5px;
+.prix{
+    position: absolute;
+    font-weight: bold;
+    color: dimgray;
 }
