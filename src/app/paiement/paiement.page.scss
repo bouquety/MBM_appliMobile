@@ -1,0 +1,272 @@
+.main{
+    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.logo{
+    width: 85px;
+    position: absolute;
+    left: 36%;
+    top: 3%;
+}
+
+.paiement{
+    position: absolute;
+    top: 12%;
+    left: 8%;
+    font-weight: bold;
+    color: #515C6F;
+}
+
+.livraison{
+    position: absolute;
+    top: 26%;
+    left: 8%;
+    color: #515C6F;
+    opacity: 0.5;
+    font-size: 11px;
+
+}
+
+.nom{
+    position: absolute;
+    top: 29%;
+    left: 8%;
+    font-size: 14px;
+    color: #515C6F;
+    font-weight: bold;
+
+}
+
+.adresse_un{
+    position: absolute;
+    top: 33%;
+    left: 8%;
+    font-size: 14px;
+    color: #515C6F;
+}
+
+.adresse_deux{
+    position: absolute;
+    top: 37%;
+    left: 8%;
+    font-size: 14px;
+    color: #515C6F;
+}
+
+.pays{
+    position: absolute;
+    top: 41%;
+    left: 8%;
+    font-size: 14px;
+    color: #515C6F;
+}
+
+.hr_un {
+    border-bottom: 1px solid #727C8E;
+    margin: 10px 0;
+    margin-left: 15px;
+    margin-top: 236px;
+    width: 87%;
+    opacity: 0.2;
+  }
+
+  .methode_paie{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    font-size: 11px;
+    color: #515C6F;
+    opacity: 0.5;
+  }
+
+  .carte_bleu{
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 47px;
+    color: #515C6F;
+    font-weight: bold;
+  }
+
+.img_carte{
+    top: 57%;
+    position: absolute;
+    left: 8%;
+    color: #515C6F;
+}
+
+.hr_deux{
+    border-bottom: 1px solid #727C8E;
+    margin: 10px 0;
+    margin-left: 15px;
+    margin-top: 10px;
+    width: 87%;
+    opacity: 0.2;
+}
+
+.item{
+        position: absolute;
+        top: 63%;
+        left: 9%;
+        font-size: 11px;
+        color: #515C6F;
+        opacity: 0.5;
+}
+.background_pr{
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    left: 12%;
+    margin-top: 17px;
+    margin-left: 11px;
+    margin-bottom: 27px;
+
+}
+.hr_trois{
+    border-bottom: 1px solid #727C8E;
+    margin: 10px 0;
+    margin-left: 15px;
+    margin-top: -18px;
+    width: 87%;
+    opacity: 0.2;
+}
+.background_prd{
+    background: #ffffff;
+    position: absolute;
+    top: 27%;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    left: 12%;
+    margin-top: 226px;
+
+}
+
+
+
+.background_prt{
+    background: #ffffff;
+    position: absolute;
+    top: 27%;
+    height: 80px;
+    width: 80px;
+    border-radius: 40px;
+    left: 12%;
+    margin-top: 165px;
+}
+
+.img_produit{
+    overflow: hidden;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    width: 66px;
+    height: 67px;
+    /* width: 42px; */
+    margin-left: 8px;
+    margin-top: 7px;
+
+}
+.type_pr{
+    position: absolute;
+    top: 69%;
+    left: 31%;
+    color: #515C6F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.taille_pr{
+    position: absolute;
+    top: 74%;
+    left: 32%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+.couleur_pr{
+    position: absolute;
+    top: 74%;
+    left: 39%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+
+.prix_pr{
+    position: absolute;
+    top: 78%;
+    left: 32%;
+    color: #707070;
+    font-size: 12px;
+}
+
+.type_prd{
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    color: #515C6F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.taille_prd{
+    position: absolute;
+    top: 65%;
+    left: 42%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+.couleur_prd{
+    position: absolute;
+    top: 65%;
+    left: 49%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+
+.prix_prd{
+    position: absolute;
+    top: 69%;
+    left: 42%;
+    color: #707070;
+    font-size: 12px;
+}
+
+.type_prt{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    color: #515C6F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.taille_prt{
+    position: absolute;
+    top: 45%;
+    left: 42%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+.couleur_prt{
+    position: absolute;
+    top: 45%;
+    left: 49%;
+    color: #515C6F;
+    font-size: 12px;
+}
+
+
+.prix_prt{
+    position: absolute;
+    top: 49%;
+    left: 42%;
+    color: #707070;
+    font-size: 12px;
+}
