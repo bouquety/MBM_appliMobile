@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-toolbar>
+        <!-- Button back -->
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="register"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Quizz</ion-title>
+    </ion-toolbar>
+</ion-header>
+<!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
+<ion-content>
+    <div class="wrapper">
+        <div class="wrap__img">
+            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+        </div>
+        <div class="time-line">
+            <div class="time-line__wrapper">
+                <span class="time-line__span">1</span>
+                <span class="time-line__span_text">Infos personnelles</span>
+            </div>
+            <hr class="time-line__hr">
+            <div class="time-line__wrapper">
+                <span class="time-line__span active">2</span>
+                <span class="time-line__span_text">Quizz</span>
+            </div>
+            <hr class="time-line__hr">
+            <div class="time-line__wrapper">
+                <span class="time-line__span">3</span>
+                <span class="time-line__span_text">Fin</span>
+            </div>
+        </div>
+        <form id="ngForm" class="login__form" (ngSubmit)="doRegister3(form)" method="post">
+            <div class="wrapper_item">
+
+            </div>
+
+            <!--shape="round"-->
+            <div class="wrapper__btn">
+                <ion-button type="submit" fill="solid" expand="full">Continuer</ion-button>
+            </div>
+        </form>
+    </div>
+</ion-content>

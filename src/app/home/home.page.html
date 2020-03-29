@@ -1,13 +1,21 @@
+<ion-header>
+    <ion-toolbar>
+        <!-- Button back -->
+        <!--<ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>-->
+        <ion-menu-button slot="start"></ion-menu-button>
+        <ion-title>Home Page</ion-title>
+    </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="container">
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+    <div class="container">
+
+        <div class="wrap__img">
+            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+        </div>
 
 
-  <p>Remplissez votre profil, puis profitez de la sélection 
-    personnalisé qu'on vous a préparé en fonction 
-    de vos réponses !</p>
-  
-  <button class="btn" [routerLink]="['/home']">Démarrez l'expérience</button>
-  <button class="btn" [routerLink]="['/login']">Connexion</button>
-</div>  
+
+    </div>
 </ion-content>

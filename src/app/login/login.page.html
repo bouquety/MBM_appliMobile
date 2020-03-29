@@ -1,19 +1,42 @@
+<ion-header>
+    <ion-toolbar>
+        <!-- Button back -->
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="landing"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Connection</ion-title>
+    </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="container">
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-    <ion-input placeholder="E-mail">   </ion-input>
-    <ion-input placeholder="Password" type="password">     </ion-input>
-    <p class="mdp">Mot de passe oublié</p>
+    <div class="wrapper">
+        <div class="wrap__img">
+            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+        </div>
+        <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
+            <div class="wrapper_item">
+                <ion-item class="">
+                    <ion-label class="login__label" position="floating">Email</ion-label>
+                    <ion-input class="login__input" [ngModel]="email" type="email" name="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="login__label" position="floating">Mot de Passe</ion-label>
+                    <ion-input class="login__input" [ngModel]="password" type="password" name="password"></ion-input>
+                </ion-item>
+                <!--<p class="mdp__forgot" text-right>Mot de passe oublié?</p>-->
+                <a class="mdp__forgot small-text" [routerLink]="['/password-lost']">Mot de passe oublié?</a>
+            </div>
 
-    
-  
-  <button class="btn" [routerLink]="['/login']">Connexion</button>
-  <p class="ou"> Ou </p>
-  <div class="hr"> </div>
-  <p class="reseaux">Connexion avec les réseaux sociaux</p>  
-  <ion-icon name="logo-facebook" class="facebook"></ion-icon>
-  <ion-icon name="logo-google" class="google"></ion-icon>
-  <ion-icon name="logo-twitter" class="twitter"></ion-icon>
-
-</div>  
+            <!--shape="round"-->
+            <div class="wrapper__btn">
+                <ion-button type="submit" fill="solid" expand="full">Connection</ion-button>
+                <ion-button expand="full" (click)="registerModal()">
+                    <ion-icon slot="start" name="logo-facebook"></ion-icon>
+                    Facebook
+                </ion-button>
+                <!--<p class="no__account" text-center>Pas de compte? S'inscrire?</p>-->
+                <a class="no__account small-text" [routerLink]="['/register']">Pas de compte? S'inscrire?</a>
+                <!--<ion-button expand="full" (click)="registerModal()">Inscription</ion-button>-->
+            </div>
+        </form>
+    </div>
 </ion-content>
