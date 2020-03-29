@@ -270,3 +270,39 @@
     color: #707070;
     font-size: 12px;
 }
+
+.total{
+    opacity: 0.5;
+    color: #515C6F;
+    margin-left: 28px;
+    font-size: 10px;
+  }
+
+  .livraison_gratuit{
+    color: #727C8E;
+    margin-left: 28px;
+    margin-top: -12px;
+    font-size: 9px;
+  }
+
+.prix_total{
+    margin-left: 28px;
+    color: #515C6F;
+    font-weight: bold;
+    margin-top: -9px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 57%;
+    padding: 15px;
+    background: linear-gradient(360deg, #5055a0, #5055a0);
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+    margin-left: 113px;
+    margin-top: -53px;
+}

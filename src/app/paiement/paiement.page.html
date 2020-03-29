@@ -49,13 +49,13 @@
             <p class="prix_pr"> 49.00€ </p>
           </ion-row>
           <div class="hr_trois"></div>
-          <ion-row>
+          <!-- <ion-row>
             <div class="background_prd"> <img class="img_produit" src="../../assets/img/pantodos.jpg"> </div>
             <p class="type_prd"> Pantalon Chic</p>
             <p class="taille_prd"> M -</p>
             <p class="couleur_prd"> Gris </p>
             <p class="prix_prd"> 49.00€ </p>
-          </ion-row>
+          </ion-row> -->
           <!-- <ion-row>
             <div class="background_prt"> <img class="img_produit" src="../../assets/img/pantodos.jpg"> </div>
             <p class="type_prt"> Pantalon Chic</p>
@@ -63,7 +63,12 @@
             <p class="couleur_prt"> Gris </p>
             <p class="prix_prt"> 49.00€ </p>
           </ion-row> -->
+          <p class="total"> Total : </p>
 
+          <p class="prix_total">89.99€</p>
+          <p class="livraison_gratuit">Livraison gratuite</p>
+          
+          <button class="btn" [routerLink]="['/paiement-valide']"> Paiment </button>
       </div>
       </div>
 </ion-content>

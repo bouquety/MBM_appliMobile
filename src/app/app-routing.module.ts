@@ -48,6 +48,10 @@ const routes: Routes = [
     path: 'paiement',
     loadChildren: () => import('./paiement/paiement.module').then( m => m.PaiementPageModule)
   },
+  {
+    path: 'paiement-valide',
+    loadChildren: () => import('./paiement-valide/paiement-valide.module').then( m => m.PaiementValidePageModule)
+  },
 ];
 
 @NgModule({
