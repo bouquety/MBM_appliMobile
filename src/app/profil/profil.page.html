@@ -2,8 +2,8 @@
 <div class="main">
   <div class="container">
     <img src="../../assets/img/MBM-logo-white.png" class="logo" />
-    <img src="../../assets/img/kid.png" class="PP"/>
-    <p class="name">Eustass KIDD</p>
+    <img src="../../assets/img/BISSAKA.jpg" class="PP"/>
+    <p class="name">Eustass kidd</p>
     <p class="info">Info perso</p>
     <p class="gout">Goûts</p>
     <div class="hr"></div>
@@ -18,12 +18,58 @@
       <ion-row>
       <p class="modifier_un"> Modifier </p>
     </ion-row>
-    </div>
     <ion-row>
-      <div class="hr_deux"></div>
+      <p class="age">Age</p>
     </ion-row>
+    <ion-row>
+      <p class="age_txt"> 22</p>
+    </ion-row>
+      <ion-row>
+      <p class="modifier_deux"> Modifier </p>
+    </ion-row>
+    <ion-row>
+      <p class="location">Location</p>
+    </ion-row>
+    <ion-row>
+      <p class="location_txt"> Moissy-Cramayel</p>
+    </ion-row>
+      <ion-row>
+      <p class="modifier_trois"> Modifier </p>
+    </ion-row>
+    <ion-row>
+      <p class="mdp">Mot de passe</p>
+    </ion-row>
+    <ion-row>
+      <p class="mdp_txt"> **********</p>
+    </ion-row>
+      <ion-row>
+      <p class="modifier_quatre"> Modifier </p>
+    </ion-row>
+    </div>
+
   </ion-grid>
 
   </div>
 </div>
 </ion-content>
+<ion-toolbar>
+  <ion-tabs class="tabs-icon-top tabs-color-active-energized tabs-striped tabs-background-positive">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Home" [routerLink]="['/accueil']">
+        <ion-icon name="home" ></ion-icon>
+        <ion-label >Home</ion-label>
+      </ion-tab-button>
+  
+     
+      <ion-tab-button tab="Profile" >
+        <ion-icon name="person" class="active"></ion-icon>
+        <ion-label class="active">Profil</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/panier']">
+        <ion-icon name="cart"></ion-icon>
+        <ion-label>Panier</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-toolbar>
