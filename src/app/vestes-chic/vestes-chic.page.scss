@@ -5,13 +5,19 @@
     width: 100%;
     display: table;
 }
-
+.arrowback{
+  position: absolute;
+    top: 5%;
+    left: -11%;
+    font-size: 22px;
+}
 .txt_vestes {
     width: 40%;
     height: auto;
     display: block;
     padding: 15px;
     margin-left: 95px;
+    color: #515C6F;
 }
 
 p{
@@ -29,12 +35,12 @@ p{
   }
 
   .categorie p {
-      color: gray;
+      color: #727C8E;
       display: inline;
       padding: 9px;
   }
 
-  .categorie .active{
+  .categorie p.active{
       color: #250A8A;
       border-bottom: 1px solid #250A8A;
       padding-bottom: 3px;
