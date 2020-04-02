@@ -3,12 +3,13 @@
     <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
 
     <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-    <ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
-
-    <p> Comment vous habillez-vous pour aller travailler ?</p>
+    <p class="q_coupe"> Avec quelle coupe vous sentez-vous le plus à l'aise ?</p>
     <ion-grid>
-      <ion-radio-group>
       <ion-row>
+        <p class="top">  Tops </p>
+      </ion-row>
+      <ion-radio-group>
+      <ion-row class="q_top">
         <ion-label>Près du corps</ion-label>
         <ion-radio value="small"></ion-radio>
         <ion-label>Droit</ion-label>
@@ -17,7 +18,59 @@
         <ion-radio value="Large"></ion-radio>
       </ion-row>
       </ion-radio-group>
+
+      <ion-row>
+        <p class="bas">  Bas </p>
+      </ion-row>
+      <ion-radio-group>
+      <ion-row class="q_top">
+        <ion-label>Près du corps</ion-label>
+        <ion-radio value="small"></ion-radio>
+        <ion-label>Droit</ion-label>
+        <ion-radio value="Medium"></ion-radio>
+        <ion-label>Ample</ion-label>
+        <ion-radio value="Large"></ion-radio>
+      </ion-row>
+      </ion-radio-group>
+<ion-row>
+  <p class="q_taille"> Quelle taille portez-vous normalement ?</p>
+</ion-row>
+<ion-row>
+  <p class="chemise_tshirt_">Chemise, T-shirt, Sweat...</p>
+</ion-row>
+<ion-row>
+        <ion-select placeholder="Taille">
+        <ion-select-option value="S">S</ion-select-option>
+        <ion-select-option value="M">M</ion-select-option>
+        <ion-select-option value="L">L</ion-select-option>
+        <ion-select-option value="XL">XL</ion-select-option>
+      </ion-select>
+    
+</ion-row>
+
+<ion-row>
+  <p class="chemise_tshirt_">Jeans, pantalons, short...</p>
+</ion-row>
+<ion-row>
+        <ion-select placeholder="Taille">
+        <ion-select-option value="S">S</ion-select-option>
+        <ion-select-option value="M">M</ion-select-option>
+        <ion-select-option value="L">L</ion-select-option>
+        <ion-select-option value="XL">XL</ion-select-option>
+      </ion-select>
+    
+</ion-row>
+
+<ion-row>
+  <p class="chemise_tshirt_">Et vos mensurations</p>
+</ion-row>
+<ion-row>
+  <ion-input placeholder="taille en cm" class="taille">   </ion-input>
+</ion-row>
+<ion-row>
+  <ion-input placeholder="Poids en Kg" class="poids">   </ion-input>
+</ion-row>
     </ion-grid>
-    <button class="btn" [routerLink]="['/register-cinq']">Continuer</button>
+    <button class="btn" [routerLink]="['/inscription-success']">Continuer</button>
 </div>  
 </ion-content>

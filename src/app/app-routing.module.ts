@@ -64,6 +64,10 @@ const routes: Routes = [
     path: 'chemises-chic',
     loadChildren: () => import('./chemises-chic/chemises-chic.module').then( m => m.ChemisesChicPageModule)
   },
+  {
+    path: 'inscription-success',
+    loadChildren: () => import('./inscription-success/inscription-success.module').then( m => m.InscriptionSuccessPageModule)
+  },
 ];
 
 @NgModule({
