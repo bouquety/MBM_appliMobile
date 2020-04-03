@@ -2,19 +2,47 @@
 <ion-content>
   <div class="main">
     <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+    <ion-icon name="cart" class="panier" (click)='goPanier()'></ion-icon>
 
     <div class="container">
 
     <img class="image_produit" src="../../assets/img/vesteuno.jpg"/>
     <p class="description">Veste de costume</p>
     <p class="prix">19.99€</p>
+        <ion-icon name="cart" class="panier"></ion-icon>
+
     <div class="note">   <ion-icon name="star"></ion-icon>  <p class="note_pr"> 4,9 </p> </div>
-    <p class="taille">Taille : </p>
+    <div class="categorie">
+      <p class="active">Détails</p> 
+      <p>Note(s)</p>
+    </div>
+        <p class="marque">Marque </p>
+        <p class="marque_rpn">Zara </p>
 
-    
-  
-  
+        <p class="codeproduit">Code Produit </p>
+        <p class="codeproduit_rpn"> 0590458902809 </p>
 
+
+        <p class="type">Type </p>
+        <p class="type_rpn"> Veste de costume </p>
+
+        <p class="couleur">Couleur </p>
+        <ion-select placeholder="Couleur" class="couleur_rpn">
+          <ion-select-option value="S">Bleu</ion-select-option>
+          <ion-select-option value="M">Rouge</ion-select-option>
+          <ion-select-option value="L">Orange</ion-select-option>
+          <ion-select-option value="XL">Violet</ion-select-option>
+        </ion-select>
+
+        <p class="categorie_txt">Catégorie </p>
+        <p class="categorie_txt_rpn">Chic </p>
+
+        <p class="taille">Taille </p>
+        <p class="taille_rpn">M </p>
+
+      <div class="hr"></div>
+
+      <button class="btn"(click)='presentAlert()'> Ajouter au panier </button>
     </div>
 </div>
 </ion-content>

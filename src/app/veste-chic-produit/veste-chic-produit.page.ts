@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-veste-chic-produit',
@@ -8,11 +9,24 @@ import { Location } from '@angular/common';
 })
 export class VesteChicProduitPage implements OnInit {
 
-  constructor(private location: Location) { }
+  constructor(private location: Location, public alertController: AlertController) { }
 
   ngOnInit() {
   }
   goBack(){
     this.location.back();
   }
+
+  goPanier(){
+    this.location.go('/panier')
+  }
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      message: 'Votre produit à été ajouter au panier ! ',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
 }

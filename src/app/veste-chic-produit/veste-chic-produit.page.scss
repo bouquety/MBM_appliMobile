@@ -1,6 +1,6 @@
 .main{
     background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
-    height: 100%;
+    height: 147vh;
     width: 100%;
     display: table;
 }
@@ -12,18 +12,18 @@
     font-size: 22px;
   }
 .image_produit{
-    margin-top: 20px;
+    margin-top: 91px;
 }
 
 
 .note{
-    margin-left: 229px;
-    margin-top: 10px;
     background: #9292EA;
     border-radius: 20px;
     color: white;
     width: 18%;
     position: absolute;
+    top: 10%;
+    left: 56%;
 }
 
 .note .note_pr {
@@ -33,20 +33,187 @@
     position: absolute;
 }
 
-.taille{
-    position: absolute;
-    top: 94%;
-    color: grey;
-}
+
 .description {
-    color: grey;
-    font-size: 15px;
-    top: 84%;
+    color: #515C6F;
+    font-size: 13px;
+    top: 4%;
     position: absolute;
+    left: 33%;
 }
 
 .prix{
     position: absolute;
     font-weight: bold;
-    color: dimgray;
+    color: #515C6F;
+    top: 7%;
+    left: 33%;
+}
+
+.panier{
+    color: #727C8E;
+    position: absolute;
+    top: 6%;
+    left: 92%;}
+
+    .categorie{
+        background: #ffffff;
+        position: absolute;
+        top: 102%;
+        left: 10%;
+        height: 29px;
+        width: 234px;
+        border-radius: 20px;
+      }
+    
+      .categorie p {
+        color: #727C8E;
+        display: inline;
+        position: absolute;
+        left: 64%;
+        top: -40%;
+    
+      }
+    
+      .categorie .active{
+        color: #250A8A;
+        position: absolute;
+        left: 18%;
+        top: -40%;
+      }
+
+      .marque{
+        position: absolute;
+        top: 114%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 7%;
+        font-size: 12px;
+    }
+    
+    .codeproduit{
+        position: absolute;
+        top: 114%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 71%;
+        font-size: 12px;
+    }
+
+    .type{
+        position: absolute;
+    top: 125%;
+    color: #515C6F;
+    opacity: 0.5;
+    left: 7%;
+    font-size: 12px;
+    
+    }
+
+    .couleur{
+        position: absolute;
+    top: 125%;
+    color: #515C6F;
+    opacity: 0.5;
+    left: 71%;
+    font-size: 12px;
+    
+    }
+
+    .categorie_txt{
+        position: absolute;
+        top: 136%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 7%;
+        font-size: 12px;
+    }
+
+    .taille{
+        position: absolute;
+        top: 136%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 71%;
+        font-size: 12px;
+    }
+
+
+    .marque_rpn{
+        position: absolute;
+        top: 117%;
+        color: #515C6F;
+        left: 7%;
+        font-size: 14px;
+    }
+
+    .codeproduit_rpn{
+        position: absolute;
+        top: 117%;
+        color: #515C6F;
+        left: 62%;
+        font-size: 14px;
+    }
+
+    .type_rpn{
+        position: absolute;
+        top: 128%;
+        color: #515C6F;
+        left: 7%;
+        font-size: 14px;
+    }
+
+    .couleur_rpn{
+        position: absolute;
+        top: 128%;
+        color: #515C6F;
+        left: 65%;
+        font-size: 14px;
+    }
+
+    .categorie_txt_rpn{
+        position: absolute;
+        top: 139%;
+        color: #515C6F;
+        left: 7%;
+        font-size: 14px;
+    }
+
+    .taille_rpn{
+        position: absolute;
+        top: 139%;
+        color: #515C6F;
+        left: 71%;
+        font-size: 14px;
+    }
+
+    .hr{
+        border-bottom: 1px solid #250A8A;
+        margin: 10px 0;
+        margin-left: 15px;
+        margin-top: 257px;
+        width: 86%;
+        opacity: 0.1;
+    }
+    
+    .btn{
+        width: 57%;
+        padding: 15px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#5055a0), to(#5055a0));
+        background: linear-gradient(360deg, #5055a0, #5055a0);
+        box-shadow: none;
+        display: block;
+        margin: 0px auto;
+        border-radius: 50px;
+        margin-bottom: 10%;
+        color: #fff;
+        margin-left: 58px;
+        margin-top: 26px;
+    }
+ 
+
+
+
+div.alert-wrapper.sc-ion-alert-md{
+    background: white;
 }

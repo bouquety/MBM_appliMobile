@@ -1,6 +1,5 @@
 <ion-content>
   <div class="main">
-    <div class="container">
     <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
     <img src="../../assets/img/chic_layout.jpeg" class="chic_layout" />
 <p class="txt_chic">Chic</p>
@@ -138,27 +137,27 @@
 </ion-grid>
 
 
-</div>
 </div>  
+
 </ion-content>
-<ion-toolbar>
-<ion-tabs class="tabs-icon-top tabs-color-active-energized tabs-striped tabs-background-positive">
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="Home">
-      <ion-icon name="home" class="active"></ion-icon>
-      <ion-label class="active">Home</ion-label>
-    </ion-tab-button>
-
-   
-    <ion-tab-button tab="Profile" [routerLink]="['/profil']">
-      <ion-icon name="person"></ion-icon>
-      <ion-label>Profil</ion-label>
-    </ion-tab-button>
-
-    <ion-tab-button [routerLink]="['/panier']">
-      <ion-icon name="cart"></ion-icon>
-      <ion-label>Panier</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
-</ion-toolbar>
+<ion-toolbar  [style.background-color]="white">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="Home">
+        <ion-icon name="home" class="active"></ion-icon>
+        <ion-label class="active">Home</ion-label>
+      </ion-tab-button>
+  
+     
+      <ion-tab-button tab="Profile" [routerLink]="['/profil']">
+        <ion-icon name="person"></ion-icon>
+        <ion-label>Profil</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button [routerLink]="['/panier']">
+        <ion-icon name="cart"></ion-icon>
+        <ion-label>Panier</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  </ion-toolbar>
