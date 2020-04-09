@@ -1,0 +1,228 @@
+.main{
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    height: 147vh;
+    width: 100%;
+    display: table;
+}
+
+.arrowback{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    font-size: 22px;
+  }
+.image_produit{
+    margin-top: 91px;
+}
+
+
+.note{
+    background: #9292EA;
+    border-radius: 20px;
+    color: white;
+    width: 18%;
+    position: absolute;
+    top: 10%;
+    left: 56%;
+}
+
+.note .note_pr {
+    margin-left: 28px;
+    margin-top: -21px;
+    font-size: 14px;
+    position: absolute;
+}
+
+
+.description {
+    color: #515C6F;
+    font-size: 13px;
+    top: 4%;
+    position: absolute;
+    left: 33%;
+}
+
+.prix{
+    position: absolute;
+    font-weight: bold;
+    color: #515C6F;
+    top: 7%;
+    left: 33%;
+}
+
+.panier{
+    color: #727C8E;
+    position: absolute;
+    top: 6%;
+    left: 92%;}
+
+    .categorie{
+        background: #ffffff;
+        position: absolute;
+        top: 102%;
+        left: 10%;
+        height: 29px;
+        width: 234px;
+        border-radius: 20px;
+      }
+    
+      .categorie p {
+        color: #727C8E;
+        display: inline;
+        position: absolute;
+      
+        left: 18%;
+        top: -40%;
+      }
+    
+      .categorie .active{
+        color: #250A8A;
+        position: absolute;
+        left: 64%;
+        top: -40%;
+      }
+
+      .date{
+        position: absolute;
+        top: 109%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 74%;
+        font-size: 12px;
+    }
+    
+    .name{
+        position: absolute;
+        top: 112%;
+        left: 27%;
+        color: #515C6F;
+        font-size: 13px;
+    }
+
+    .descri_note{
+        position: absolute;
+    top: 117%;
+    font-size: 11px;
+    left: 27%;
+    color: #515C6F;
+    }
+
+    .initial{
+        position: absolute;
+        color: #85CBCB;
+        top: 110%;
+        left: 12%;
+        font-weight: bold;
+        font-size: 19px;
+    }
+    .circle_name{
+        background: #B7E6E6;
+        height: 40px;
+        width: 39px;
+        border-radius: 30px;
+        
+        margin-top: 63px;
+        margin-left: 27px;
+    }
+
+    .star{
+        position: absolute;
+        top: 116%;
+        left: 52%;
+        font-size: 12px;
+    }
+
+    .star .active{
+        color: #9292EA;
+    }
+
+    .star .non_active{
+        color: #727C8E;
+        opacity: 0.3;
+    }
+
+    // DOS    // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS   // DOS
+    .date_d{
+        position: absolute;
+        top: 125%;
+        color: #515C6F;
+        opacity: 0.5;
+        left: 74%;
+        font-size: 12px;
+    }
+    
+    .name_d{
+        position: absolute;
+        top: 128%;
+        left: 27%;
+        color: #515C6F;
+        font-size: 13px;
+    }
+
+    .descri_note_d{
+        position: absolute;
+    top: 133%;
+    font-size: 11px;
+    left: 27%;
+    color: #515C6F;
+    }
+
+    .initial_d{
+        position: absolute;
+        color: #85CBCB;
+        top: 127%;
+        left: 14%;
+        font-weight: bold;
+        font-size: 19px;
+    
+    }
+    .circle_name_d{
+        background: #B7E6E6;
+        height: 40px;
+        width: 39px;
+        border-radius: 30px;
+        
+        margin-top: 45px;
+        margin-left: 27px;
+    }
+
+    .star_d{
+        position: absolute;
+        top: 133%;
+        left: 52%;
+        font-size: 12px;
+    }
+
+    .star_d .active{
+        color: #9292EA;
+    }
+
+    .star_d .non_active{
+        color: #727C8E;
+        opacity: 0.3;
+    }
+
+
+
+    // End
+    .btn{
+        width: 57%;
+        padding: 15px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#5055a0), to(#5055a0));
+        background: linear-gradient(360deg, #5055a0, #5055a0);
+        box-shadow: none;
+        display: block;
+        margin: 0px auto;
+        border-radius: 50px;
+        margin-bottom: 10%;
+        color: #fff;
+        margin-left: 58px;
+        margin-top: 26px;
+    }
+ 
+
+
+
+div.alert-wrapper.sc-ion-alert-md{
+    background: white;
+}

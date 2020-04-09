@@ -68,6 +68,14 @@ const routes: Routes = [
     path: 'inscription-success',
     loadChildren: () => import('./inscription-success/inscription-success.module').then( m => m.InscriptionSuccessPageModule)
   },
+  {
+    path: 'produit-ajout-note',
+    loadChildren: () => import('./produit-ajout-note/produit-ajout-note.module').then( m => m.ProduitAjoutNotePageModule)
+  },
+  {
+    path: 'produit-view-note',
+    loadChildren: () => import('./produit-view-note/produit-view-note.module').then( m => m.ProduitViewNotePageModule)
+  },
 ];
 
 @NgModule({
