@@ -16,8 +16,8 @@
       </ion-row>
         
       <ion-row>
-        <p class="voir"> Voir </p>
-        <p class="modifier_un"> Modifier </p>
+        <p class="voir" [routerLink]="['/regiep-sportwear']"> Voir </p>
+        <p class="modifier_un" [routerLink]="['/regiep-sportwear-modif']" > Modifier </p>
       </ion-row>
       <ion-row>
         <p class="age">Campagne 2</p>
@@ -43,7 +43,7 @@
       </div>
   
     </ion-grid>
-  <p class="deconnexion" [routerLink]="['/login']"> Deconnexion </p>
+  <p class="deconnexion" [routerLink]="['/regie-p-login']"> Deconnexion </p>
     </div>
   </div>
   </ion-content>

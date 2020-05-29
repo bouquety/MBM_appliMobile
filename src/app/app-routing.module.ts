@@ -99,6 +99,14 @@ const routes: Routes = [
     path: 'regie-p-registertrois',
     loadChildren: () => import('./regie-p-registertrois/regie-p-registertrois.module').then( m => m.RegiePRegistertroisPageModule)
   },
+  {
+    path: 'regiep-sportwear',
+    loadChildren: () => import('./regiep-sportwear/regiep-sportwear.module').then( m => m.RegiepSportwearPageModule)
+  },
+  {
+    path: 'regiep-sportwear-modif',
+    loadChildren: () => import('./regiep-sportwear-modif/regiep-sportwear-modif.module').then( m => m.RegiepSportwearModifPageModule)
+  },
 
 ];
 
