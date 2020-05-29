@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-veste-chic-produit',
@@ -9,14 +10,16 @@ import { AlertController } from '@ionic/angular';
 })
 export class VesteChicProduitPage implements OnInit {
 
-  constructor(private location: Location, public alertController: AlertController) { }
+  constructor(private location: Location, public alertController: AlertController, private router: Router) { }
 
   ngOnInit() {
   }
   goBack(){
     this.location.back();
   }
-
+  goCart(){
+    this.router.navigateByUrl('/panier');
+  }
   goPanier(){
     this.location.go('/panier')
   }

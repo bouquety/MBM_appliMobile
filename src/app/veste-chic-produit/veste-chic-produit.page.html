@@ -2,14 +2,13 @@
 <ion-content>
   <div class="main">
     <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
-    <ion-icon name="cart" class="panier" [routerLink]="['/panier']"></ion-icon>
 
     <div class="container">
 
     <img class="image_produit" src="../../assets/img/vesteuno.jpg"/>
     <p class="description">Veste de costume</p>
     <p class="prix">19.99€</p>
-        <ion-icon name="cart" class="panier"></ion-icon>
+    <ion-icon name="cart" class="panier" (click)='goCart()'></ion-icon>
 
     <div class="note">   <ion-icon name="star"></ion-icon>  <p class="note_pr"> 4,9 </p> </div>
     <div class="categorie">

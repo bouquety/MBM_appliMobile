@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vestes-chic',
@@ -8,11 +9,14 @@ import { Location } from '@angular/common';
 })
 export class VestesChicPage implements OnInit {
 
-  constructor( private location: Location) { }
+  constructor( private location: Location, private router: Router) { }
 
   ngOnInit() {
   }
   goBack(){
     this.location.back();
+  }
+  goCart(){
+    this.router.navigateByUrl('/panier');
   }
 }
