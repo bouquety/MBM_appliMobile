@@ -1,0 +1,23 @@
+[33m3f54842[m[33m ([m[1;36mHEAD -> [m[1;32malain_bis[m[33m, [m[1;31morigin/alain[m[33m, [m[1;32malain[m[33m)[m HEAD@{0}: checkout: moving from alain to alain_bis
+[33m3f54842[m[33m ([m[1;36mHEAD -> [m[1;32malain_bis[m[33m, [m[1;31morigin/alain[m[33m, [m[1;32malain[m[33m)[m HEAD@{1}: checkout: moving from alain_bis to alain
+[33m3f54842[m[33m ([m[1;36mHEAD -> [m[1;32malain_bis[m[33m, [m[1;31morigin/alain[m[33m, [m[1;32malain[m[33m)[m HEAD@{2}: checkout: moving from alain to alain_bis
+[33m3f54842[m[33m ([m[1;36mHEAD -> [m[1;32malain_bis[m[33m, [m[1;31morigin/alain[m[33m, [m[1;32malain[m[33m)[m HEAD@{3}: commit: Ajout pages notes
+[33m91523eb[m HEAD@{4}: commit: page produit
+[33mfc53b01[m HEAD@{5}: commit: Ajout deux dernières pages inscription
+[33m7a29d61[m HEAD@{6}: commit: Ajout page chemises et pantalons
+[33m87d4d75[m HEAD@{7}: commit: Correction goBack
+[33m26e5258[m HEAD@{8}: commit: Go back
+[33m0a2e234[m HEAD@{9}: commit: page profil info
+[33m3aa6b74[m HEAD@{10}: commit: Commencement page profil
+[33m753a90e[m HEAD@{11}: commit: page panier + page paiement valider
+[33m6c60ef7[m HEAD@{12}: commit: debut page paiement
+[33m7207e65[m HEAD@{13}: commit: page panier finalisé
+[33m9398ff9[m HEAD@{14}: commit: début page panier
+[33m065fd7a[m HEAD@{15}: commit: Ajout page produit veste
+[33m368fc20[m HEAD@{16}: commit: Page Vestes_Chic
+[33m1cfe7e2[m HEAD@{17}: commit: Page Accueil Chic
+[33mbd4ffd8[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{18}: checkout: moving from master to alain
+[33mbd4ffd8[m[33m ([m[1;32mmaster[m[33m)[m HEAD@{19}: commit: First Commit
+[33m34cd53d[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{20}: commit: Page Login
+[33m8c54ed2[m HEAD@{21}: commit: Initialisation appli mobile
+[33me426e68[m HEAD@{22}: commit (initial): Initial commit

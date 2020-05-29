@@ -45,24 +45,35 @@
     </div>
 </div>
 </ion-content>
-<ion-toolbar>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="Home" [routerLink]="['/accueil']">
-        <ion-icon name="home" ></ion-icon>
-        <ion-label >Home</ion-label>
-      </ion-tab-button>
-  
-     
-      <ion-tab-button tab="Profile" [routerLink]="['/profil']">
-        <ion-icon name="person"></ion-icon>
-        <ion-label>Profil</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button tab="about">
-        <ion-icon name="cart" class="active"></ion-icon>
-        <ion-label class="active">Panier</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>
+      Click to Add Text
+    </ion-title> -->
+    <ion-buttons slot="start">
+      <ion-button [routerLink]="['/accueil']">
+        <ion-icon slot="start" name="home" class="accueil"></ion-icon>
+        <ion-label class="accueil"> Home</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+   
+
+    <ion-buttons slot="end">
+      <ion-button  >
+        <ion-icon  slot="end" name="cart" class="panier" class="active"></ion-icon>
+        <ion-label class="active"> panier</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      <ion-buttons>
+        <ion-button [routerLink]="['/profil']">
+          <ion-icon  name="person" ></ion-icon>
+          <ion-label > Profile</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-title>
+ 
   </ion-toolbar>
+</ion-footer>

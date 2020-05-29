@@ -12,7 +12,6 @@
   <p>Soirée</p>
 </div>
 
-
 <p class="txt_veste"><b>Veste </b> </p>
 <a class="viewall" [routerLink]="['/vestes-chic']">Voir tout </a>
 <ion-grid>
@@ -140,24 +139,42 @@
 </div>  
 
 </ion-content>
-<ion-toolbar  [style.background-color]="white">
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="Home">
-        <ion-icon name="home" class="active"></ion-icon>
-        <ion-label class="active">Home</ion-label>
-      </ion-tab-button>
-  
-     
-      <ion-tab-button tab="Profile" [routerLink]="['/profil']">
-        <ion-icon name="person"></ion-icon>
-        <ion-label>Profil</ion-label>
-      </ion-tab-button>
-  
-      <ion-tab-button [routerLink]="['/panier']">
-        <ion-icon name="cart"></ion-icon>
-        <ion-label>Panier</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
+<ion-footer class="ion-no-border">
+  <ion-toolbar>
+    <!-- <ion-title>
+      Click to Add Text
+    </ion-title> -->
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="start" name="home" class="active"></ion-icon>
+        <ion-label class="active"> Home</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+   
+
+    <ion-buttons slot="end">
+      <ion-button  [routerLink]="['/panier']">
+        <ion-icon  slot="end" name="cart" class="panier"></ion-icon>
+        <ion-label> panier</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      <ion-buttons>
+        <ion-button [routerLink]="['/profil']">
+          <ion-icon  name="person" ></ion-icon>
+          <ion-label> Profile</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-title>
+ 
   </ion-toolbar>
+</ion-footer>
+
+
+
+
+
+
+

@@ -170,13 +170,46 @@
     color: #707070;
     font-size: 12px;
 }
-ion-label.active{
-    color: #250A8A;
+ion-icon {
+    color: #515C6F;
   }
 
-  ion-icon.active{
-    color: #250A8A;
+ 
+
+  ion-buttons ion-button ion-icon.accueil {
+    margin-top: -13px;
   }
+
+  ion-buttons ion-button ion-label.accueil {
+    margin-left: -2px;
+}
+
+ion-label.active{
+  color: #250A8A;
+}
+
+ion-icon.active{
+  color: #250A8A;
+  margin-top: -13px;
+  margin-right: 10px;
+}
+
+ion-title ion-buttons ion-button ion-icon {
+  margin-top: -13px;
+}
+
+ion-label {
+  color: grey;
+  position: absolute;
+  top: 74%;
+  font-size: 8px;
+}
+
+ion-title{
+  margin-left: 53px;
+}
+
+
 
   .hr {
     border-bottom: 1px solid #727C8E;

@@ -2,7 +2,7 @@
 <ion-content>
   <div class="main">
     <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
-    <ion-icon name="cart" class="panier" (click)='goPanier()'></ion-icon>
+    <ion-icon name="cart" class="panier" [routerLink]="['/panier']"></ion-icon>
 
     <div class="container">
 
