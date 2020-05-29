@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-regie-p-login',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegiePLoginPage implements OnInit {
 
-  constructor() { }
+  constructor(private location: Location, private router: Router) { }
 
   ngOnInit() {
   }
-
+  goBack(){
+    this.router.navigateByUrl('/regie-p-home');
+  }
 }

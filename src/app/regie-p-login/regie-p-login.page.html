@@ -1,9 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>regieP_login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div class="container">
+    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+    <ion-input placeholder="Société">   </ion-input>
+    <ion-input placeholder="Mot de passe" type="password">     </ion-input>
+    <p class="mdp">Mot de passe oublié</p>
 
+    
+  
+  <button class="btn" [routerLink]="['/regi-p-accueil']">Connexion</button>
+  <p class="ou"> Ou </p>
+  <div class="hr"> </div>
+  <p class="reseaux">Connexion avec les réseaux sociaux</p>  
+  <ion-icon name="logo-facebook" class="facebook"></ion-icon>
+  <ion-icon name="logo-google" class="google"></ion-icon>
+  <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+
+</div>  
 </ion-content>
