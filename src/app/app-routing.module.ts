@@ -75,7 +75,31 @@ const routes: Routes = [
   {
     path: 'produit-view-note',
     loadChildren: () => import('./produit-view-note/produit-view-note.module').then( m => m.ProduitViewNotePageModule)
+  },  {
+    path: 'regie-p-home',
+    loadChildren: () => import('./regie-p-home/regie-p-home.module').then( m => m.RegiePHomePageModule)
   },
+  {
+    path: 'regie-p-login',
+    loadChildren: () => import('./regie-p-login/regie-p-login.module').then( m => m.RegiePLoginPageModule)
+  },
+  {
+    path: 'regie-p-register',
+    loadChildren: () => import('./regie-p-register/regie-p-register.module').then( m => m.RegiePRegisterPageModule)
+  },
+  {
+    path: 'regi-p-accueil',
+    loadChildren: () => import('./regi-p-accueil/regi-p-accueil.module').then( m => m.RegiPAccueilPageModule)
+  },
+  {
+    path: 'regie-p-registerdeux',
+    loadChildren: () => import('./regie-p-registerdeux/regie-p-registerdeux.module').then( m => m.RegiePRegisterdeuxPageModule)
+  },
+  {
+    path: 'regie-p-registertrois',
+    loadChildren: () => import('./regie-p-registertrois/regie-p-registertrois.module').then( m => m.RegiePRegistertroisPageModule)
+  },
+
 ];
 
 @NgModule({

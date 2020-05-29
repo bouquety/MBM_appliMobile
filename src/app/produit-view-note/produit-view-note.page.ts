@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { AlertController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class ProduitViewNotePage implements OnInit {
 
-  constructor(private location: Location, public alertController: AlertController) { }
+  constructor(private location: Location, public alertController: AlertController, private router: Router) { }
   goBack(){
     this.location.back();
   }
@@ -21,6 +22,10 @@ export class ProduitViewNotePage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  goCart(){
+    this.router.navigateByUrl('/panier');
   }
   ngOnInit() {
   }

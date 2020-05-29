@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertController } from '@ionic/angular';
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-produit-ajout-note',
@@ -9,7 +10,7 @@ import { Location } from '@angular/common';
 })
 export class ProduitAjoutNotePage implements OnInit {
 
-  constructor(private location: Location, public alertController: AlertController) { }
+  constructor(private location: Location, public alertController: AlertController, private router: Router) { }
 
   ngOnInit() {
   }
@@ -23,5 +24,9 @@ export class ProduitAjoutNotePage implements OnInit {
     });
 
     await alert.present();
+  }
+
+  goCart(){
+    this.router.navigateByUrl('/panier');
   }
 }
