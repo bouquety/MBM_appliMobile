@@ -1,13 +1,25 @@
 <ion-content>
   <div class="main">
     <div class="container">
+      <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+
       <img src="../../assets/img/MBM-logo-white.png" class="logo" />
       <img src="../../assets/img/logo-Zara.jpg" class="PP"/> 
       <p class="name">Vêtements Sportwear</p>
      
       <div class="hr"></div>
   <ion-grid>
-     
+    <ion-row>
+      <ion-card class="welcome-card">
+        <ion-card-header>
+          <ion-card-subtitle>Vente de T-shirt par couleur</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <canvas #barCanvas></canvas>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+    
     </ion-grid>
   <p class="deconnexion" [routerLink]="['/regie-p-login']"> Deconnexion </p>
     </div>
