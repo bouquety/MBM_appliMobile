@@ -8,8 +8,8 @@ import { Chart } from 'chart.js';
   styleUrls: ['./regiep-sportwear.page.scss'],
 })
 export class RegiepSportwearPage implements OnInit {
-  @ViewChild("barCanvas") barCanvas: ElementRef;
-  @ViewChild("barCanvasdos") barCanvasdos: ElementRef;
+  @ViewChild("barCanvas", {static: true}) barCanvas;
+  @ViewChild("barCanvasdos", {static: true}) barCanvasdos;
 
 
   private barChart: Chart;
