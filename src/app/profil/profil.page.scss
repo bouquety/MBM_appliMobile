@@ -1,0 +1,212 @@
+.main{
+    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
+    height: 115vh;
+    width: 100%;
+    display: table;
+}
+.logo{
+    width: 85px;
+    position: absolute;
+    left: 36%;
+    top: 3%;
+}
+
+.PP{
+    position: absolute;
+    left: 36%;
+    top: 22%;
+    border-radius: 40px;
+    width: 80px;
+    height: 80px;
+}
+
+.name{
+    position: absolute;
+    top: 35%;
+    left: 21%;
+    font-size: 29px;
+    color: #515C6F;
+}
+
+.info{
+    padding-bottom: 10px;
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    font-size: 11px;
+    color: #223269;
+    border-bottom: 2px solid #9292EA;
+}
+
+.gout{
+    position: absolute;
+    top: 49%;
+    left: 74%;
+    font-size: 11px;
+    color: #223269;
+    opacity: 0.3;
+}
+
+.hr{
+    border-bottom: 1.8px solid #ffff;
+    margin: 10px 0;
+    margin-left: 28px;
+    margin-top: 266px;
+    width: 80%;
+
+}
+
+.background_info{
+    background: #ffffff;
+    position: absolute;
+    top: 48%;
+    height: 57%;
+    width: 91%;
+    left: 4%;
+    margin-top: 71px;
+
+}
+
+.email{
+    color: #223269;
+    opacity: 0.3;
+    font-size: 12px;
+    margin-left: 17px;
+}
+
+.email_txt{
+    color: #242134;
+    font-size: 13px;
+    margin-top: -4px;
+    margin-left: 17px;
+}
+
+.modifier_un{
+    color: #9292EA;
+    font-size: 11px;
+    margin-left: 206px;
+    margin-top: -42px;
+}
+
+.hr_deux{
+    border-bottom: 1px solid grey;
+    margin: 10px 0;
+    margin-left: 28px;
+    width: 80%;
+
+}
+
+.age{
+    color: #223269;
+    opacity: 0.3;
+    font-size: 12px;
+    margin-left: 17px;
+    margin-top: 14px;
+
+}
+
+.age_txt{
+    color: #242134;
+    font-size: 13px;
+    margin-top: 0px;
+    margin-left: 17px;
+}
+
+.modifier_deux{
+    color: #9292EA;
+    font-size: 11px;
+    margin-left: 206px;
+    margin-top: -42px;
+}
+
+.location{
+    color: #223269;
+    opacity: 0.3;
+    font-size: 12px;
+    margin-left: 17px;
+}
+
+.location_txt{
+    color: #242134;
+    font-size: 13px;
+    margin-left: 17px;
+    margin-top: 0px;
+}
+
+.modifier_trois{
+    color: #9292EA;
+    font-size: 11px;
+    margin-left: 206px;
+    margin-top: -42px;
+}
+
+.mdp{
+    color: #223269;
+    opacity: 0.3;
+    font-size: 12px;
+    margin-left: 17px;
+}
+
+.mdp_txt{
+    color: #242134;
+    font-size: 13px;
+    margin-left: 17px;
+    margin-top: 0px;
+}
+
+.modifier_quatre{
+    color: #9292EA;
+    font-size: 11px;
+    margin-left: 206px;
+    margin-top: -42px;
+}
+
+ion-icon {
+    color: #515C6F;
+  }
+
+  ion-buttons ion-button ion-icon.panier {
+    margin-top: -13px;
+    margin-right: 10px;
+  }
+
+  ion-buttons ion-button ion-icon.accueil {
+    margin-top: -13px;
+  }
+
+  ion-buttons ion-button ion-label.accueil {
+    margin-left: -2px;
+}
+
+ion-label.active{
+  color: #250A8A;
+}
+
+ion-icon.active{
+  color: #250A8A;
+}
+
+ion-title ion-buttons ion-button ion-icon {
+  margin-top: -13px;
+}
+
+ion-label {
+  color: grey;
+  position: absolute;
+  top: 74%;
+  font-size: 7px;
+}
+
+ion-title{
+  margin-left: 53px;
+}
+
+  .deconnexion {
+    position: absolute;
+    top: 5%;
+    left: 72%;
+    color: #242134;
+    font-size: 13px;
+    opacity: 0.3;
+
+  }

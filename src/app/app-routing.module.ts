@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'accueil-chic',
     loadChildren: () => import('./accueil-chic/accueil-chic.module').then( m => m.AccueilChicPageModule)
   },
+  {
+    path: 'profil',
+    loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
+  },
 
 
 ];

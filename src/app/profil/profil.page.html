@@ -1,0 +1,86 @@
+<ion-content>
+  <div class="main">
+    <div class="container">
+      <img src="../../assets/img/MBM-logo-white.png" class="logo" />
+      <img src="../../assets/img/BISSAKA.jpg" class="PP"/> 
+      <p class="name">Eustass kidd</p>
+      <p class="info">Info perso</p>
+      <p class="gout">Goûts</p>
+      <div class="hr"></div>
+  <ion-grid>
+      <div class="background_info">
+        <ion-row>
+        <p class="email">Email</p>
+      </ion-row>
+      <ion-row>
+        <p class="email_txt"> abouquety1@gmail.com</p>
+      </ion-row>
+        <ion-row>
+        <p class="modifier_un"> Modifier </p>
+      </ion-row>
+      <ion-row>
+        <p class="age">Age</p>
+      </ion-row>
+      <ion-row>
+        <p class="age_txt"> 22</p>
+      </ion-row>
+        <ion-row>
+        <p class="modifier_deux"> Modifier </p>
+      </ion-row>
+      <ion-row>
+        <p class="location">Location</p>
+      </ion-row>
+      <ion-row>
+        <p class="location_txt"> Moissy-Cramayel</p>
+      </ion-row>
+        <ion-row>
+        <p class="modifier_trois"> Modifier </p>
+      </ion-row>
+      <ion-row>
+        <p class="mdp">Mot de passe</p>
+      </ion-row>
+      <ion-row>
+        <p class="mdp_txt"> **********</p>
+      </ion-row>
+        <ion-row>
+        <p class="modifier_quatre"> Modifier </p>
+      </ion-row>
+      </div>
+  
+    </ion-grid>
+  <p class="deconnexion" [routerLink]="['/login']"> Deconnexion </p>
+    </div>
+  </div>
+  </ion-content>
+  <ion-footer class="ion-no-border">
+    <ion-toolbar class="footer">
+      <!-- <ion-title>
+        Click to Add Text
+      </ion-title> -->
+      <ion-buttons slot="start">
+        <ion-button [routerLink]="['/accueil']">
+          <ion-icon slot="start" name="home" class="accueil"></ion-icon>
+          <ion-label class="accueil"> Home</ion-label>
+        </ion-button>
+      </ion-buttons>
+  
+     
+  
+      <ion-buttons slot="end">
+        <ion-button  [routerLink]="['/panier']">
+          <ion-icon  slot="end" name="cart" class="panier"></ion-icon>
+          <ion-label> panier</ion-label>
+        </ion-button>
+      </ion-buttons>
+  
+      <ion-title>
+        <ion-buttons>
+          <ion-button >
+            <ion-icon  name="person" class="active"></ion-icon>
+            <ion-label class="active"> Profile</ion-label>
+          </ion-button>
+        </ion-buttons>
+      </ion-title>
+   
+    </ion-toolbar>
+  </ion-footer>
