@@ -1,0 +1,161 @@
+.main{
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    height: 147vh;
+    width: 100%;
+    display: table;
+}
+
+.arrowback{
+    position: absolute;
+    top: 5%;
+    left: 1%;
+    font-size: 22px;
+  }
+.image_produit{
+    margin-top: 91px;
+}
+
+
+.note{
+    background: #9292EA;
+    border-radius: 20px;
+    color: white;
+    width: 18%;
+    position: absolute;
+    top: 10%;
+    left: 56%;
+}
+
+.note .note_pr {
+    margin-left: 28px;
+    margin-top: -21px;
+    font-size: 14px;
+    position: absolute;
+}
+
+
+.description {
+    color: #515C6F;
+    font-size: 13px;
+    top: 4%;
+    position: absolute;
+    left: 33%;
+}
+
+.prix{
+    position: absolute;
+    font-weight: bold;
+    color: #515C6F;
+    top: 7%;
+    left: 33%;
+}
+
+.panier{
+    color: #727C8E;
+    position: absolute;
+    top: 6%;
+    left: 92%;}
+
+    .categorie{
+        background: #ffffff;
+        position: absolute;
+        top: 102%;
+        left: 10%;
+        height: 29px;
+        width: 234px;
+        border-radius: 20px;
+      }
+    
+      .categorie p {
+        color: #727C8E;
+        display: inline;
+        position: absolute;
+      
+        left: 18%;
+        top: -40%;
+      }
+    
+      .categorie .active{
+        color: #250A8A;
+        position: absolute;
+        left: 64%;
+        top: -40%;
+      }
+
+  .note_txt{
+    position: absolute;
+    top: 111%;
+    left: 8%;
+    color: #515C6F;
+    font-size: 14px;
+  }
+
+    .star{
+        position: absolute;
+        top: 120%;
+        left: 8%;
+        font-size: 12px;
+    }
+
+    .star .active{
+        color: #9292EA;
+        margin-right: 6px;
+    }
+
+    .star .non_active{
+        color: #727C8E;
+        opacity: 0.3;
+    }
+
+    .title{
+        position: absolute;
+    top: 123%;
+    left: 8%;
+    color: #515C6F;
+    font-size: 14px;
+    }
+
+    .title_txt{
+        background: #fff;
+        font-size: 10px;
+        margin-top: 150px;
+        color: #223269;
+    }
+
+   .description_d{
+    position: absolute;
+    top: 138%;
+    left: 8%;
+    color: #515C6F;
+    font-size: 14px;
+   }
+
+   .descri_txt{
+    background: #fff;
+    font-size: 10px;
+    margin-top: 58px;
+    color: #223269;
+    height: 91px;
+   }
+    .btn{
+        width: 57%;
+        padding: 15px;
+        background: -webkit-gradient(linear, left bottom, left top, from(#5055a0), to(#5055a0));
+        background: linear-gradient(360deg, #5055a0, #5055a0);
+        box-shadow: none;
+        display: block;
+        margin: 0px auto;
+        border-radius: 50px;
+        margin-bottom: 10%;
+        color: #fff;
+        margin-left: 58px;
+        margin-top: 50px;
+    }
+    
+ 
+
+
+
+div.alert-wrapper.sc-ion-alert-md{
+    background: white;
+}

@@ -47,6 +47,18 @@ const routes: Routes = [
     path: 'paiement-valide',
     loadChildren: () => import('./paiement-valide/paiement-valide.module').then( m => m.PaiementValidePageModule)
   },
+  {
+    path: 'veste-chic-produit',
+    loadChildren: () => import('./veste-chic-produit/veste-chic-produit.module').then( m => m.VesteChicProduitPageModule)
+  },
+  {
+    path: 'produit-view-note',
+    loadChildren: () => import('./produit-view-note/produit-view-note.module').then( m => m.ProduitViewNotePageModule)
+  },
+  {
+    path: 'produit-ajout-note',
+    loadChildren: () => import('./produit-ajout-note/produit-ajout-note.module').then( m => m.ProduitAjoutNotePageModule)
+  },
 
 
 ];
