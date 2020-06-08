@@ -4,8 +4,7 @@
         <!--<ion-buttons slot="start">
             <ion-back-button defaultHref="home"></ion-back-button>
         </ion-buttons>-->
-        <ion-menu-button slot="start"></ion-menu-button>
-        <ion-title>Home Page</ion-title>
+        <ion-title>Landing Page</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -16,6 +15,19 @@
         </div>
 
 
+        <h2>Boutique de vêtements homme personnalisés</h2>
+
+        <div class="wrap__btn">
+            <ion-button fill="solid" [routerLink]="['/register']" expand="block">
+                <!--<ion-icon slot="start" name="logo-facebook"></ion-icon>-->
+                DEMARRER EXPERIENCE
+            </ion-button>
+            <!-- #564D85 shape="round" -->
+            <ion-button fill="solid" [routerLink]="['/login']" expand="block">
+                <!--<ion-icon slot="start" name="person"></ion-icon>-->
+                Connection
+            </ion-button>
+        </div>
 
     </div>
 </ion-content>

@@ -28,7 +28,7 @@
 
             <!--shape="round"-->
             <div class="wrapper__btn">
-                <ion-button type="submit" fill="solid" expand="full">Connection</ion-button>
+                <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/accueil-chic']">Connection</ion-button>
                 <ion-button expand="full" (click)="registerModal()">
                     <ion-icon slot="start" name="logo-facebook"></ion-icon>
                     Facebook
@@ -38,5 +38,6 @@
                 <!--<ion-button expand="full" (click)="registerModal()">Inscription</ion-button>-->
             </div>
         </form>
+        
     </div>
 </ion-content>

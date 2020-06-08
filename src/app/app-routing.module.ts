@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'register3',
     loadChildren: () => import('./register3/register3.module').then( m => m.Register3PageModule)
   },
+  {
+    path: 'accueil-chic',
+    loadChildren: () => import('./accueil-chic/accueil-chic.module').then( m => m.AccueilChicPageModule)
+  },
 
 
 ];
