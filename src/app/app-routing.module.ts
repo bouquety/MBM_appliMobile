@@ -35,6 +35,18 @@ const routes: Routes = [
     path: 'profil',
     loadChildren: () => import('./profil/profil.module').then( m => m.ProfilPageModule)
   },
+  {
+    path: 'panier',
+    loadChildren: () => import('./panier/panier.module').then( m => m.PanierPageModule)
+  },
+  {
+    path: 'paiement',
+    loadChildren: () => import('./paiement/paiement.module').then( m => m.PaiementPageModule)
+  },
+  {
+    path: 'paiement-valide',
+    loadChildren: () => import('./paiement-valide/paiement-valide.module').then( m => m.PaiementValidePageModule)
+  },
 
 
 ];

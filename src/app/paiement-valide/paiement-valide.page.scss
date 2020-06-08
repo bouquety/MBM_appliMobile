@@ -1,0 +1,56 @@
+.main{
+    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.icon_check{
+    position: absolute;
+    top: 9%;
+    font-size: 83px;
+    left: 12%;
+    color: #250A8A;
+}
+
+
+
+.paiement_valide{
+    top: 46%;
+    position: absolute;
+    left: 22%;
+    color: #515C6F;
+    font-size: 21px;
+}
+
+.txt_paie{
+    position: absolute;
+    left: 13%;
+    top: 55%;
+    font-size: 13px;
+    color:#515C6F;
+}
+
+.btn{
+    width: 57%;
+    padding: 15px;
+    background: linear-gradient(360deg, #5055a0, #5055a0);
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+    margin-top: 373px;
+}
+
+.background_circle{
+    background: #ffffff;
+    position: absolute;
+    top: 29%;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    left: 33%;
+    
+}
