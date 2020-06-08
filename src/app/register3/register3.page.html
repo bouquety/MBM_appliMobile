@@ -10,9 +10,9 @@
 <!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
 <ion-content>
     <div class="wrapper">
-        <div class="wrap__img">
+        <!-- <div class="wrap__img">
             <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-        </div>
+        </div> -->
         <div class="time-line">
             <div class="time-line__wrapper">
                 <span class="time-line__span">1</span>
@@ -20,19 +20,20 @@
             </div>
             <hr class="time-line__hr">
             <div class="time-line__wrapper">
-                <span class="time-line__span">2</span>
+                <span class="time-line__span active">2</span>
                 <span class="time-line__span_text">Quizz</span>
             </div>
             <hr class="time-line__hr">
             <div class="time-line__wrapper">
-                <span class="time-line__span active">3</span>
+                <span class="time-line__span">3</span>
                 <span class="time-line__span_text">Fin</span>
             </div>
         </div>
-        <form id="ngForm" class="login__form" (ngSubmit)="doRegisterEnd(form)" method="post">
+        <!-- <form id="ngForm" class="login__form" (ngSubmit)="doRegisterEnd(form)" method="post"> -->
             <div class="wrapper_item">
+                    <p>Comment vous habillez vous pour aller travailler ?</p>
                     <ion-grid>
-                            <p>Comment vous habillez vous pendant votre temps libre ?</p>
+                            <!-- <p>Comment vous habillez vous pour aller travailler ?</p> -->
                             <ion-radio-group>
                                 <ion-row>
                                     <ion-col size="6"> <img src="../../assets/img/joggo.jpg" class="img-style" /></ion-col>
@@ -63,9 +64,7 @@
             </div>
 
             <!--shape="round"-->
-            <div class="wrapper__btn">
-                <ion-button type="submit" fill="solid" expand="full">Valider</ion-button>
-            </div>
-        </form>
+            <button class="btn" (click)='goRegister3()'>Continuer</button>
+        <!-- </form> -->
     </div>
 </ion-content>
