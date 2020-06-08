@@ -9,55 +9,16 @@
 </ion-header>
 <!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
 <ion-content>
-    <div class="wrapper">
-        <div class="wrap__img">
-            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-        </div>
-        <div class="time-line">
-            <div class="time-line__wrapper">
-                <span class="time-line__span active">1</span>
-                <span class="time-line__span_text">Infos personnelles</span>
-            </div>
-            <hr class="time-line__hr">
-            <div class="time-line__wrapper">
-                <span class="time-line__span">2</span>
-                <span class="time-line__span_text">Quizz</span>
-            </div>
-            <hr class="time-line__hr">
-            <div class="time-line__wrapper">
-                <span class="time-line__span">3</span>
-                <span class="time-line__span_text">Fin</span>
-            </div>
-        </div>
-        <form id="ngForm" class="login__form" (ngSubmit)="doRegister2(form)" method="post">
-            <div class="wrapper_item">
-                <ion-item class="">
-                    <ion-label class="login__label" position="floating">Nom</ion-label>
-                    <ion-input class="login__input" ngModel type="email" name="email"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                    <ion-label class="login__label" position="floating">Prénom</ion-label>
-                    <ion-input class="login__input" ngModel type="email" name="email"></ion-input>
-                </ion-item>
-                <ion-item class="">
-                    <ion-label class="login__label" position="floating">Email</ion-label>
-                    <ion-input class="login__input" ngModel type="email" name="email"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label class="login__label" position="floating">Mot de Passe</ion-label>
-                    <ion-input class="login__input" ngModel type="password" name="password"></ion-input>
-                </ion-item>
-                <ion-item>
-                    <ion-label class="login__label" position="floating">Confirmation du mot de Passe</ion-label>
-                    <ion-input class="login__input" ngModel type="password" name="password"></ion-input>
-                </ion-item>
-            </div>
-
-            <!--shape="round"-->
-            <div class="wrapper__btn">
-                <ion-button type="submit" fill="solid" expand="full">Continuer</ion-button>
-                <a class="no__account small-text" [routerLink]="['/login']">Vous avez un compte? Connection?</a>
-            </div>
-        </form>
+    <div class="main">
+      <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+  
+      <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+      <ion-input placeholder="Nom Complet"> </ion-input>
+      <ion-input placeholder="E-mail" type="E-mail"> </ion-input>
+      <ion-input placeholder="Mot de passe" type="password"> </ion-input>
+      <ion-input placeholder="Confirmation mot de passe" type="password"> </ion-input>
+  
+      <button class="btn" [routerLink]="['/register-trois']">Continuer</button>
+  
     </div>
-</ion-content>
+  </ion-content>
