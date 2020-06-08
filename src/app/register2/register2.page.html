@@ -10,9 +10,9 @@
 <!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
 <ion-content>
     <div class="wrapper">
-        <div class="wrap__img">
+        <!-- <div class="wrap__img">
             <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-        </div>
+        </div> -->
         <div class="time-line">
             <div class="time-line__wrapper">
                 <span class="time-line__span">1</span>
@@ -29,8 +29,8 @@
                 <span class="time-line__span_text">Fin</span>
             </div>
         </div>
-        
-        <ion-grid>
+       <ion-grid>
+            <p>Comment vous habillez vous pendant votre temps libre ?</p>
             <ion-radio-group>
                 <ion-row>
                     <ion-col size="6"> <img src="../../assets/img/joggo.jpg" class="img-style" /></ion-col>
@@ -58,6 +58,7 @@
                 </ion-row>
             </ion-radio-group>
         </ion-grid>
-      
+        <button class="btn" (click)='goRegister2()'>Continuer</button>
     </div>
+ 
 </ion-content>
