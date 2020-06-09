@@ -10,6 +10,13 @@
     left: 2%;
     font-size: 22px;
   }
+
+  .img-slides {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
 .btn {
     width: 90%;
     padding: 15px;
@@ -23,109 +30,15 @@
     color: #fff;
   }
 
-.coupe{
-    width: 100%;
-    padding: 2px;
-    background: #07070741;
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    margin-bottom: 10%;
-    font-size: 10px;
-}
-
-.img-slides {
-    width: 90%;
-    height: auto;
-    display: block;
-    padding: 20px;
-}
-
-ion-radio{
-    margin-left: 13px;
-    margin-right: 13px;
-}
-.img-style{
-    border-radius: 30px;
-}
-
-.q_coupe{
-    width: 100%;
-    padding: 2px;
-    background: #07070741;
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    margin-bottom: 10%;
-    // font-size: 10px;
-    height: 42px;
-    font-size: 13px;
-    text-align: center;
-    color: white;
-}
-.q_top{
-    font-size: 11px;
-    // color:white;
-}
-.top{
-    margin-top: -25px;
-    font-size: 14px;  
-    color:white;  
-}
-
-.bas{
-    margin-top: 17px;
-    font-size: 14px; 
-    color:white;   
-}
-
-.q_taille{
-    font-size: 14px;
+.msg_felicitation{
+    margin-left: 79px;
+    font-size: 26px;
     color:white;
-
-    
-    
-}
-
-.placeholder_area{
-    width: 50%;
-}
-
-.chemise_tshirt_{
-    font-size: 11px;
-    margin-top: 0px;
+  }
+.msg_success{
     color:white;
 }
-ion-select{
-    background: white;
-    color: black;
-    width: 42%;
-    font-size: 14px;
-    height: 25px;
-}
-
-.select-text {
-    color: black;
-    margin-left: 34px;
-}
-
-ion-input{
-    width: 60%;
-    padding: 5px;
-    background: #07070741;
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    border-radius: 50px;
-    margin-bottom: 10%;
-    font-size: 10px;
-    color:white;
-}
-
-.time-line {
+  .time-line {
     // border: #ffffff 1px solid;
     display: flex;
     width: 102%;
@@ -168,15 +81,3 @@ ion-input{
         width: 50px;
     }
 }
-
-.white{
-    color:white;
-}
-
-.poids{
-    margin-left:10px;
-}
-
-//css add
-
-

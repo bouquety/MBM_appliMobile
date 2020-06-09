@@ -61,7 +61,7 @@
     <p class="q_taille"> Quelle taille portez-vous normalement ?</p>
    
   </ion-row>
-  
+  <!-- TEST -->
   <ion-row>
     <p class="chemise_tshirt_">Chemise, T-shirt, Sweat...</p>
   </ion-row>
@@ -95,13 +95,14 @@
   </ion-row>
   <ion-row class="placeholder_area">
     <ion-input placeholder="taille en cm" class="taille"></ion-input>
+   
     <ion-input placeholder="Poids en Kg" class="poids"></ion-input>
   </ion-row>
   <ion-row class="placeholder_area">
     <!-- <ion-input placeholder="Poids en Kg" class="poids"></ion-input> -->
   </ion-row>
       </ion-grid>
-      <button class="btn" [routerLink]="['/inscription-success']">Continuer</button>
+      <button class="btn" (click)='goRegister5()'>Continuer</button>
   </div>  
   </ion-content>
 

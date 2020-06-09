@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-register4',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Register4Page implements OnInit {
 
-  constructor() { }
-
+  constructor(private navController: NavController) { }
   ngOnInit() {
   }
 
+  doRegisterEnd(form): void {
+    this.navController.navigateForward('home');
+  }
+  goRegister5(form): void {
+    this.navController.navigateForward('register5');
+  }
 }
