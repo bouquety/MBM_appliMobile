@@ -30,7 +30,8 @@
             </div>
         </div>
        <ion-grid> 
-            <p>Comment vous habillez vous pendant votre temps libre ?</p>
+            <p class="q_coupe"> Comment vous habillez vous pendant votre temps libre ? </p>
+            <!-- <p>Comment vous habillez vous pendant votre temps libre ?</p> -->
             <ion-radio-group>
                 <ion-row>
                     <ion-col size="6"> <img src="../../assets/img/joggo.jpg" class="img-style" /></ion-col>
@@ -58,7 +59,10 @@
                 </ion-row>
             </ion-radio-group>
         </ion-grid>
-        <button class="btn" (click)='goRegister3()'>Continuer</button>
+        <!-- <button class="btn" (click)='goRegister3()'>Continuer</button> -->
+        <div class="wrapper__btn">
+            <ion-button type="submit" fill="solid" expand="full" (click)="goRegister3()">Connection</ion-button>
+        </div>
     </div>
  
 </ion-content>

@@ -16,5 +16,8 @@ export class Register3Page implements OnInit {
   doRegisterEnd(form): void {
     this.navController.navigateForward('home');
   }
+  goRegister4(form): void {
+    this.navController.navigateForward('register4');
+  }
 
 }

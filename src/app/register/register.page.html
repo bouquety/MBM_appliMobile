@@ -1,24 +1,65 @@
 <ion-header>
-    <ion-toolbar>
-        <!-- Button back -->
-        <ion-buttons slot="start">
-            <ion-back-button defaultHref="landing"></ion-back-button>
-        </ion-buttons>
-        <ion-title>Inscription - Quizz</ion-title>
-    </ion-toolbar>
-</ion-header>
-<!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
-<ion-content>
-    <div class="main">
-      <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
-  
-      <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-      <ion-input placeholder="Nom Complet"> </ion-input>
-      <ion-input placeholder="E-mail" type="E-mail"> </ion-input>
-      <ion-input placeholder="Mot de passe" type="password"> </ion-input>
-      <ion-input placeholder="Confirmation mot de passe" type="password"> </ion-input>
-  
-      <button class="btn" (click)='goRegister2()'>Continuer</button>
-  
-    </div>
-  </ion-content>
+        <ion-toolbar>
+            <!-- Button back -->
+            <ion-buttons slot="start">
+                <ion-back-button defaultHref="landing"></ion-back-button>
+            </ion-buttons>
+            <ion-title>Inscription - Quizz</ion-title>
+        </ion-toolbar>
+    </ion-header>
+    <!--[scrollEvents]="true" (ionScrollStart)="logScrollStart()" (ionScroll)="logScrolling($event)" (ionScrollEnd)="logScrollEnd()"-->
+    <ion-content>
+        
+            <div class="wrapper">
+                    <div class="time-line">
+                            <div class="time-line__wrapper">
+                                <span class="time-line__span active">1</span>
+                                <span class="time-line__span_text">Infos personnelles</span>
+                            </div>
+                            <hr class="time-line__hr">
+                            <div class="time-line__wrapper">
+                                <span class="time-line__span">2</span>
+                                <span class="time-line__span_text">Quizz</span>
+                            </div>
+                            <hr class="time-line__hr">
+                            <div class="time-line__wrapper">
+                                <span class="time-line__span">3</span>
+                                <span class="time-line__span_text">Fin</span>
+                            </div>
+                        </div>
+                <!-- <div class="wrap__img">
+                    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+                </div> -->
+                <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
+                    <div class="wrapper_item">
+                        <ion-item class="">
+                            <ion-label class="login__label" position="floating">Nom</ion-label>
+                            <ion-input class="login__input" [ngModel]="Nom" type="name" name="name"></ion-input>
+                        </ion-item>
+                        <ion-item class="">
+                                <ion-label class="login__label" position="floating">Email</ion-label>
+                                <ion-input class="login__input" [ngModel]="email" type="email" name="email"></ion-input>
+                            </ion-item>
+                        <ion-item>
+                            <ion-label class="login__label" position="floating">Mot de Passe</ion-label>
+                            <ion-input class="login__input" [ngModel]="password" type="password" name="password"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                                <ion-label class="login__label" position="floating">Confirmer Mot de Passe</ion-label>
+                                <ion-input class="login__input" [ngModel]="password" type="password" name="password"></ion-input>
+                        </ion-item>
+                        
+                        
+                       <!-- Nom.Email.mot de passe.confirmation mot de passe. -->
+                    </div>
+        
+                    <!--shape="round"-->
+                    <div class="wrapper__btn">
+                        <ion-button type="submit" fill="solid" expand="full" (click)="goRegister2()">Connection</ion-button>
+                    </div>
+                </form>
+            </div>
+        </ion-content>
+
+
+       

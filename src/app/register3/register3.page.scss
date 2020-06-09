@@ -25,7 +25,7 @@
         display: flex;
         justify-content: space-between;
         width: 90%;
-        margin-top: 50px;
+        // margin-top: 50px;
         .time-line__wrapper {
             display: flex;
             flex-direction: column;
@@ -193,4 +193,21 @@
     height: auto;
     display: block;
     padding: 20px;
+}
+
+.q_coupe{
+    width: 100%;
+    padding: 2px;
+    background: #07070741;
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 10%;
+    margin-top:10px;
+    // font-size: 10px;
+    height: 42px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
 }
