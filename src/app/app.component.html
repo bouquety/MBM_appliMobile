@@ -3,133 +3,174 @@
 </ion-app>-->
 <ion-app>
     <ion-split-pane contentId="main">
-        <ion-menu contentId="main">
+        <ion-menu contentId="main" menuId="first">
             <ion-header>
                 <ion-toolbar>
-                    <ion-title>Menu</ion-title>
+                    <ion-title>Filtre</ion-title>
                 </ion-toolbar>
             </ion-header>
             <ion-content>
                 <ion-list>
-                    <ion-item-divider>Catégories</ion-item-divider>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Costumes</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Vestes</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Chemises</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Polos & T-shirts</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Pulls & gilets</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Pantalons</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Jeans</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Parkas & Blousons</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Accessoires</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item>
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Sous-vêtements & Nuit</ion-label>
-                                <ion-label color="medium">Description</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-item-divider>Mon compte</ion-item-divider>
-                    <ion-menu-toggle>
-                        <ion-item button (click)="goTo('profile')">
-                            <ion-icon name="body-outline" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Profile</ion-label>
-                                <ion-label color="medium">Bienvenue !</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item button (click)="goTo('messagerie')">
-                            <ion-icon name="mail-outline" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Messagerie</ion-label>
-                                <ion-label color="medium">Consultez vos messages</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
-                    <ion-menu-toggle>
-                        <ion-item button (click)="goTo('cart')">
-                            <ion-icon name="cart" slot="start"></ion-icon>
-                            <div class="wrap__menu-label">
-                                <ion-label class="menu-label-title">Panier</ion-label>
-                                <ion-label color="medium">Consultez votre panier</ion-label>
-                            </div>
-                        </ion-item>
-                    </ion-menu-toggle>
+                    <ion-item lines="none" (click)="isRemainder === 1 ? isRemainder = 0 : isRemainder = 1">
+                        <ion-icon name="folder" slot="start"></ion-icon>
+                        Catégorie
+                        <ion-icon slot="end" [name]="isRemainder? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+                      </ion-item>
+                
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Jeans, pantalon
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Veste
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Polo & T-Shirt
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Chemise
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Costume
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Pull, Sweat & Gilet
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Parka & Blouson
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isRemainder" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Accessoires 
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+
+                      <ion-item lines="none" (click)="isMarque === 1 ? isMarque = 0 : isMarque = 1">
+                        <ion-icon name="pricetags" slot="start"></ion-icon>
+                        Marque
+                        <ion-icon slot="end" [name]="isMarque? 'arrow-dropdown' : 'arrow-dropright'"></ion-icon>
+                      </ion-item>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" [routerLink]="['/notifications']"
+                            [queryParams]="{ type: 'birthday' }" menuClose class="sub-menu">
+                            Levis 
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque"
+                           menuClose class="sub-menu">
+                            Celio
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                             menuClose class="sub-menu">
+                            Jules
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                             menuClose class="sub-menu">
+                            Armand Thierry
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                            menuClose class="sub-menu">
+                            Zara
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                             menuClose class="sub-menu">
+                            H&M
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                             menuClose class="sub-menu">
+                            Dsquared2
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+                      <ion-menu-toggle auto-hide="true">
+                        <ion-list lines="none">
+                          <ion-item menuclose [hidden]="!isMarque" 
+                             menuClose class="sub-menu">
+                            Kaporal
+                          </ion-item>
+                        </ion-list>
+                      </ion-menu-toggle>
+
+
+            
+
                 </ion-list>
             </ion-content>
         </ion-menu>

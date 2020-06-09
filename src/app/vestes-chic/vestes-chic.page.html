@@ -1,0 +1,147 @@
+<ion-content>
+  <div class="main">
+    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+    <ion-icon name="cart" class="panier" (click)='goCart()'></ion-icon>
+    <ion-icon name="menu" class="menu" (click)='openFirst()'></ion-icon>
+
+    
+
+    <div class="container">
+    <p class="txt_vestes"> Vestes </p>
+
+
+
+<ion-grid>
+  <ion-row>
+<ion-card [routerLink]="['/veste-chic-produit']">
+  <ion-card-content>
+    <img src="../../assets/img/vesteuno.jpg"/>
+    <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
+    <ion-card-subtitle class="prix"> 19,99€  </ion-card-subtitle>
+    <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <img src="../../assets/img/vestedos.jpg"/>
+    <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
+    <ion-card-subtitle class="prix"> 39,99€ </ion-card-subtitle>
+    <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+  </ion-card-content>
+</ion-card>
+</ion-row>
+<ion-row>
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img/vestetres.jpg"/>
+      <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
+      <ion-card-subtitle class="prix"> 79,99€ </ion-card-subtitle>
+      <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img/vestequatro.jpg"/>
+      <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
+      <ion-card-subtitle class="prix"> 44,99€ </ion-card-subtitle>
+      <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+    </ion-card-content>
+  </ion-card>
+  </ion-row>
+<ion-row>
+  <div class="hr"></div>
+  <div class="hrs"></div>
+</ion-row>
+
+<ion-row>
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img/vestecinq (1).jpg"/>
+      <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
+      <ion-card-subtitle class="prix"> 24,99€ </ion-card-subtitle>
+      <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img/vestecinq (2).jpg"/>
+      <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
+      <ion-card-subtitle class="prix"> 27,99€ </ion-card-subtitle>
+      <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+    </ion-card-content>
+  </ion-card>
+  </ion-row>
+  <ion-row>
+    <ion-card>
+      <ion-card-content>
+        <img src="../../assets/img/vestequatro - Copie.jpg"/>
+        <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
+        <ion-card-subtitle class="prix"> 40,99€ </ion-card-subtitle>
+        <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card>
+      <ion-card-content>
+        <img src="../../assets/img/vesteseis.jpg"/>
+        <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
+        <ion-card-subtitle class="prix"> 34,99€ </ion-card-subtitle>
+        <ion-card-subtitle class="note">   <ion-icon name="star" class="star"></ion-icon>  <p> 4,9 </p> </ion-card-subtitle>
+
+      </ion-card-content>
+    </ion-card>
+    </ion-row>
+  
+
+
+  
+
+
+
+</ion-grid>
+
+
+</div>
+</div>  
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-toolbar class="footer">
+    <!-- <ion-title>
+      Click to Add Text
+    </ion-title> -->
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="start" name="home" class="active"></ion-icon>
+        <ion-label class="active"> Home</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+   
+
+    <ion-buttons slot="end">
+      <ion-button  [routerLink]="['/panier']">
+        <ion-icon  slot="end" name="cart" class="panier"></ion-icon>
+        <ion-label> panier</ion-label>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="profile_tab">
+      <ion-buttons>
+        <ion-button [routerLink]="['/profil']">
+          <ion-icon  name="person" ></ion-icon>
+          <ion-label> Profile</ion-label>
+        </ion-button>
+      </ion-buttons>
+    </ion-title>
+ 
+  </ion-toolbar>
+</ion-footer>

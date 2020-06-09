@@ -59,6 +59,10 @@ const routes: Routes = [
     path: 'produit-ajout-note',
     loadChildren: () => import('./produit-ajout-note/produit-ajout-note.module').then( m => m.ProduitAjoutNotePageModule)
   },
+  {
+    path: 'vestes-chic',
+    loadChildren: () => import('./vestes-chic/vestes-chic.module').then( m => m.VestesChicPageModule)
+  },
 
 
 ];
