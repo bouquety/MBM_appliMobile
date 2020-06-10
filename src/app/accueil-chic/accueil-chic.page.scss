@@ -1,6 +1,6 @@
 .wrapper {
     // background: linear-gradient(360deg, #5055a0, #5055a0);
-    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
     min-height: 100%;
     width: 100%;
     margin: auto;
@@ -170,4 +170,6 @@ ion-title.profile_tab{
   }
 
   
-  
+  .toolbar-background {
+    background-color: rgb(255, 255, 255);
+  }
