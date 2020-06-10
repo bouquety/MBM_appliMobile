@@ -1,6 +1,8 @@
 {
   "name": "Mbm_mobile",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "6b339252"
 }
