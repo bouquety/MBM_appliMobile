@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar>
+      <!-- Button back -->
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="register2"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Quizz - Fin</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+    <div class="main">
+      <!-- <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon> -->
+  
+      <!-- <img src="../../assets/img/MBM-logo-white.png" class="img-slides" /> -->
+      <div class="time-line">
+        <div class="time-line__wrapper">
+            <span class="time-line__span">1</span>
+            <span class="time-line__span_text">Infos personnelles</span>
+        </div>
+        <hr class="time-line__hr">
+        <div class="time-line__wrapper">
+            <span class="time-line__span active">2</span>
+            <span class="time-line__span_text">Quizz</span>
+        </div>
+        <hr class="time-line__hr">
+        <div class="time-line__wrapper">
+            <span class="time-line__span">3</span>
+            <span class="time-line__span_text">Fin</span>
+        </div>
+    </div>
+      <p class="q_coupe"> Avec quelle coupe vous sentez-vous le plus à l'aise ?</p>
+      <ion-grid>
+        <ion-row>
+          <p class="top">  Tops </p>
+        </ion-row>
+        <ion-radio-group>
+        <ion-row class="q_top">
+          <ion-label class="white">Près du corps</ion-label>
+          <ion-radio value="small" class=""></ion-radio>
+          <ion-label class="white">Droit</ion-label>
+          <ion-radio class="white" value="Medium"></ion-radio>
+          <ion-label class="white">Ample</ion-label>
+          <ion-radio value="Large"></ion-radio>
+        </ion-row>
+        </ion-radio-group>
+  
+        <ion-row>
+          <p class="bas">  Bas </p>
+        </ion-row>
+        <ion-radio-group>
+        <ion-row class="q_top">
+          <ion-label class="white">Près du corps</ion-label>
+          <ion-radio value="small"></ion-radio>
+          <ion-label class="white" class="white">Droit</ion-label>
+          <ion-radio value="Medium"></ion-radio>
+          <ion-label class="white">Ample</ion-label>
+          <ion-radio value="Large"></ion-radio>
+        </ion-row>
+        </ion-radio-group>
+  <ion-row>
+    <p class="q_taille"> Quelle taille portez-vous normalement ?</p>
+   
+  </ion-row>
+  <!-- TEST -->
+  <ion-row>
+    <p class="chemise_tshirt_">Chemise, T-shirt, Sweat...</p>
+  </ion-row>
+
+
+  <ion-row>
+          <ion-select placeholder="Taille">
+          <ion-select-option value="S">S</ion-select-option>
+          <ion-select-option value="M">M</ion-select-option>
+          <ion-select-option value="L">L</ion-select-option>
+          <ion-select-option value="XL">XL</ion-select-option>
+        </ion-select>
+      
+  </ion-row>
+  
+  <ion-row>
+    <p class="chemise_tshirt_">Jeans, pantalons, short...</p>
+  </ion-row>
+  <ion-row>
+          <ion-select placeholder="Taille">
+          <ion-select-option value="S">S</ion-select-option>
+          <ion-select-option value="M">M</ion-select-option>
+          <ion-select-option value="L">L</ion-select-option>
+          <ion-select-option value="XL">XL</ion-select-option>
+        </ion-select>
+      
+  </ion-row>
+  
+  <ion-row>
+    <p class="chemise_tshirt_">Et vos mensurations</p>
+  </ion-row>
+  <ion-row class="placeholder_area">
+    <ion-input placeholder="taille en cm" class="taille"></ion-input>
+   
+    <ion-input placeholder="Poids en Kg" class="poids"></ion-input>
+  </ion-row>
+  <ion-row class="placeholder_area">
+    <!-- <ion-input placeholder="Poids en Kg" class="poids"></ion-input> -->
+  </ion-row>
+      </ion-grid>
+      <button class="btn" (click)='goRegister5()'>Continuer</button>
+  </div>  
+  </ion-content>
+
+  

@@ -16,5 +16,8 @@ export class RegisterPage implements OnInit {
   doRegister2(form): void {
     this.navController.navigateForward('register2');
   }
+  goRegister2(form): void {
+    this.navController.navigateForward('register2');
+  }
 
 }

@@ -2,22 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-register3',
-  templateUrl: './register3.page.html',
-  styleUrls: ['./register3.page.scss'],
+  selector: 'app-register4',
+  templateUrl: './register4.page.html',
+  styleUrls: ['./register4.page.scss'],
 })
-export class Register3Page implements OnInit {
+export class Register4Page implements OnInit {
 
   constructor(private navController: NavController) { }
-
   ngOnInit() {
   }
 
   doRegisterEnd(form): void {
     this.navController.navigateForward('home');
   }
-  goRegister4(form): void {
-    this.navController.navigateForward('register4');
+  goRegister5(form): void {
+    this.navController.navigateForward('register5');
   }
-
 }

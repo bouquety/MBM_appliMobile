@@ -8,7 +8,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    // padding: 50px 0;
     overflow: scroll;
     .wrap__img {
         display: flex;
@@ -25,7 +25,7 @@
         display: flex;
         justify-content: space-between;
         width: 90%;
-        margin-top: 50px;
+        // margin-top: 50px;
         .time-line__wrapper {
             display: flex;
             flex-direction: column;
@@ -156,4 +156,69 @@
 .login-form__timeline__hr {
     border-color: #2B2743;
     width: 50px;
+}
+
+// New 
+.main{
+    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+
+}
+.arrowback{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-size: 22px;
+}
+.btn {
+    width: 90%;
+    padding: 15px;
+    background: linear-gradient(360deg, #5055a0, #5055a0);
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
+  }
+
+  .img-slides {
+    width: 90%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
+
+.q_coupe{
+    width: 100%;
+    padding: 2px;
+    background: #07070741;
+    font-family: "Poppins";
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    margin-bottom: 10%;
+    margin-top:10px;
+    // font-size: 10px;
+    height: 42px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+}
+
+.wrapper__btn {
+    margin-top: 50px;
+    // border: #ffffff 1px solid;
+    .no__account {
+        text-align: center;
+    }
+    ion-button {
+        width: 80vw;
+        --background: #564D85;
+        --color: #ffffff;
+        border: #ffffff;
+    }
 }
