@@ -7,7 +7,7 @@
       <ion-title>Accueil_Chic</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content >
   <div class="wrapper">
       <div class="wrap__img">
           <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
@@ -29,6 +29,7 @@
           
         </ion-segment>
       </ion-toolbar>
+      <div class="background">
       <p class="txt_veste"><b>Veste </b> </p>
 <a class="viewall" [routerLink]="['/vestes-chic']">Voir tout </a>
 <ion-grid>
@@ -148,11 +149,47 @@
       </ion-card>
       </ion-row>
 
+      <ion-row>
+        <div class="hr"></div>
+        <div class="hrs"></div>
+      </ion-row>
+      <p class="txt_pantalon"><b>Marques favorites </b> </p>
+      <ion-row>
+        <ion-slides>
 
+          <ion-slide>
+            <div class="slide">
+              <img src="../../assets/img/devred.png"/>
+            </div>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/hm.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/celio.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/adid.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/armand_thierry.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/levis.png"/>
+          </ion-slide>
+  
+        </ion-slides>
+        </ion-row>
+  
 
 </ion-grid>
     
-
+</div>
   </div>
 </ion-content>
 
