@@ -7,7 +7,7 @@
       <ion-title>Accueil_Chic</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content>
+<ion-content >
   <div class="wrapper">
       <div class="wrap__img">
           <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
@@ -16,7 +16,7 @@
       <p class="txt_chic">Chic</p>
       <p class="txt">Tout vos besoins mode sous un même toit</p>
       <ion-toolbar>
-        <ion-segment value="Chic">
+        <ion-segment (ionChange)="segmentChanged($event)" value="Chic">
           <ion-segment-button value="Chic">
             Chic
           </ion-segment-button>
@@ -27,8 +27,10 @@
             Street
           </ion-segment-button>
           
+          
         </ion-segment>
       </ion-toolbar>
+      <div class="background">
       <p class="txt_veste"><b>Veste </b> </p>
 <a class="viewall" [routerLink]="['/vestes-chic']">Voir tout </a>
 <ion-grid>
@@ -148,11 +150,47 @@
       </ion-card>
       </ion-row>
 
+      <ion-row>
+        <div class="hr"></div>
+        <div class="hrs"></div>
+      </ion-row>
+      <p class="txt_pantalon"><b>Marques favorites </b> </p>
+      <ion-row>
+        <ion-slides>
 
+          <ion-slide>
+            <div class="slide">
+              <img src="../../assets/img/devred.png"/>
+            </div>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/hm.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/celio.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/adid.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/armand_thierry.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/levis.png"/>
+          </ion-slide>
+  
+        </ion-slides>
+        </ion-row>
+  
 
 </ion-grid>
     
-
+</div>
   </div>
 </ion-content>
 

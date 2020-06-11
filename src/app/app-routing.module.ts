@@ -72,6 +72,38 @@ const routes: Routes = [
     path: 'vestes-chic',
     loadChildren: () => import('./vestes-chic/vestes-chic.module').then( m => m.VestesChicPageModule)
   },
+  {
+    path: 'regi-p-accueil',
+    loadChildren: () => import('./regi-p-accueil/regi-p-accueil.module').then( m => m.RegiPAccueilPageModule)
+  },
+  {
+    path: 'regie-p-home',
+    loadChildren: () => import('./regie-p-home/regie-p-home.module').then( m => m.RegiePHomePageModule)
+  },
+  {
+    path: 'regie-p-login',
+    loadChildren: () => import('./regie-p-login/regie-p-login.module').then( m => m.RegiePLoginPageModule)
+  },
+  {
+    path: 'regie-p-sportwear',
+    loadChildren: () => import('./regie-p-sportwear/regie-p-sportwear.module').then( m => m.RegiePSportwearPageModule)
+  },
+  {
+    path: 'regie-p-sportwear-modif',
+    loadChildren: () => import('./regie-p-sportwear-modif/regie-p-sportwear-modif.module').then( m => m.RegiePSportwearModifPageModule)
+  },
+  {
+    path: 'regie-p-register',
+    loadChildren: () => import('./regie-p-register/regie-p-register.module').then( m => m.RegiePRegisterPageModule)
+  },
+  {
+    path: 'regie-p-registerdeux',
+    loadChildren: () => import('./regie-p-registerdeux/regie-p-registerdeux.module').then( m => m.RegiePRegisterdeuxPageModule)
+  },
+  {
+    path: 'regie-p-registertrois',
+    loadChildren: () => import('./regie-p-registertrois/regie-p-registertrois.module').then( m => m.RegiePRegistertroisPageModule)
+  },
 
 
 ];

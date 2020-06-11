@@ -65,14 +65,14 @@ p{
 
 
   .txt_veste{
-    color: white;
+    color: grey;
     font-size: 22px;
     margin: 5px 0px 0px 25px;
     margin-right: 203px;
     }
 
     .txt_pantalon{
-      color: white;
+      color: grey;
       font-size: 22px;
       margin-left: 25px;
       font-weight:bold;
@@ -80,7 +80,7 @@ p{
     }
 
     .txt_chaussure{
-      color: white;
+      color: grey;
       font-size: 22px;
       margin-left: 25px;
       font-weight:bold;
@@ -172,4 +172,26 @@ ion-title.profile_tab{
   
   .toolbar-background {
     background-color: rgb(255, 255, 255);
+  }
+
+  ion-slides {
+    height: 100%;
+    width: 200px;
+  }
+
+  .swiper-slide {
+    display: block;
+  }
+
+ 
+
+  .swiper-slide img {
+    max-height: 50%;
+    max-width: 80%;
+    margin: 60px 0 40px;
+    pointer-events: none;
+  }
+
+  .background{
+    background: radial-gradient(white, transparent);
   }
