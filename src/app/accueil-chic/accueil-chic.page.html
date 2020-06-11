@@ -16,7 +16,7 @@
       <p class="txt_chic">Chic</p>
       <p class="txt">Tout vos besoins mode sous un même toit</p>
       <ion-toolbar>
-        <ion-segment value="Chic">
+        <ion-segment (ionChange)="segmentChanged($event)" value="Chic">
           <ion-segment-button value="Chic">
             Chic
           </ion-segment-button>
@@ -26,6 +26,7 @@
           <ion-segment-button value="Street">
             Street
           </ion-segment-button>
+          
           
         </ion-segment>
       </ion-toolbar>
