@@ -19,13 +19,22 @@ const routes: Routes = [
   {
     path: 'landing',
     loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
-  },  {
+  },
+  {
     path: 'register2',
     loadChildren: () => import('./register2/register2.module').then( m => m.Register2PageModule)
   },
   {
     path: 'register3',
     loadChildren: () => import('./register3/register3.module').then( m => m.Register3PageModule)
+  },
+  {
+    path: 'register4',
+    loadChildren: () => import('./register4/register4.module').then( m => m.Register4PageModule)
+  },
+  {
+    path: 'register5',
+    loadChildren: () => import('./register5/register5.module').then( m => m.Register5PageModule)
   },
   {
     path: 'accueil-chic',
