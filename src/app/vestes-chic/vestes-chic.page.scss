@@ -1,0 +1,133 @@
+
+.main{
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+.arrowback{
+  position: absolute;
+    top: 5%;
+    left: -11%;
+    font-size: 22px;
+    width: 32%;
+    margin-left: 2px;
+}
+.txt_vestes {
+    width: 40%;
+    height: auto;
+    display: block;
+    padding: 15px;
+    margin-left: 95px;
+    color: #515C6F;
+}
+
+p{
+    color: white;
+}
+
+
+
+ion-icon {
+  color: #515C6F;
+}
+
+ion-buttons ion-button ion-icon.card {
+  margin-top: -13px;
+  margin-right: 10px;
+}
+
+ion-label.active{
+color: #250A8A;
+margin-left: -2px;
+}
+
+ion-icon.active{
+color: #250A8A;
+margin-top: -13px;
+}
+
+ion-title ion-buttons ion-button ion-icon {
+margin-top: -13px;
+}
+
+ion-label {
+color: grey;
+position: absolute;
+top: 74%;
+font-size: 7px;
+}
+
+ion-title.profile_tab{
+margin-left: 53px;
+}
+
+  ion-label.active{
+    color: #250A8A;
+  }
+
+  ion-icon.active{
+    color: #250A8A;
+  }
+
+  ion-card{
+      width: 115px !important; 
+      box-shadow: 5px 2px 2px rgb(90, 90, 90) !important;
+      border-radius: 8px !important;
+      background: white !important;
+
+  }
+
+  
+  ion-card-subtitle{
+    font-size: 11px;
+  }
+ 
+  ion-card-subtitle.prix{
+    font-weight:bold;
+  }
+
+ion-card-subtitle.note{
+    margin-left: 61px;
+    margin-top: -14px;
+    background: #9292EA;
+    border-radius: 20px;
+    color: white;
+    width: 33%;
+}
+
+ion-card-subtitle p{
+    margin-left: 13px;
+    font-size: 8px;
+    margin-top: -16px;
+}
+ion-icon.star {
+    width: 32%;
+    margin-left: 2px;
+    color: white;
+
+} 
+
+
+
+
+
+
+.panier{
+  color: #727C8E;
+  position: absolute;
+  top: 6%;
+  left: 77%;
+  width: 32%;
+    margin-left: 2px;
+}
+
+  ion-icon.menu{
+    position: absolute;
+    top: 12%;
+    left: -11%;
+    width: 32%;
+    margin-left: 2px;
+  }
+
+

@@ -1,0 +1,175 @@
+.wrapper {
+    // background: linear-gradient(360deg, #5055a0, #5055a0);
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    min-height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .wrap__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 25vw;
+        height: 25vw;
+        border: 1px solid #ffffff;
+        border-radius: 50% 50%;
+    }
+    
+}
+
+
+.main{
+    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.img-slides {
+    height: auto;
+    display: block;
+}
+
+.chic_layout{
+    opacity: 0.6;
+    height: 150px;
+    width: 100%;
+}
+p{
+    color: white;
+}
+
+.txt_chic {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+  }
+
+  .txt{
+    position: absolute;
+    top: 36%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+
+  }
+
+ 
+
+
+
+  .txt_veste{
+    color: white;
+    font-size: 22px;
+    margin: 5px 0px 0px 25px;
+    margin-right: 203px;
+    }
+
+    .txt_pantalon{
+      color: white;
+      font-size: 22px;
+      margin-left: 25px;
+      font-weight:bold;
+      margin: 0px 0px 0px 25px;
+    }
+
+    .txt_chaussure{
+      color: white;
+      font-size: 22px;
+      margin-left: 25px;
+      font-weight:bold;
+      margin: 0px 0px 0px 25px;
+    }
+
+  .viewall{
+    margin-left: 230px;
+    font-size: 10px;
+    top: 55%;
+    color: grey;
+}
+
+.viewall_pantalon{
+  margin-left: 230px;
+  font-size: 10px;
+  color: grey;
+}
+
+.viewall_chaussure{
+  margin-left: 230px;
+  font-size: 10px;
+  color: grey;
+}
+
+ 
+  ion-card{
+      width: 115px;
+      box-shadow: 5px 2px 2px rgb(90, 90, 90);
+      border-radius: 8px;
+      background: white;
+
+  }
+
+  ion-icon {
+    color: #515C6F;
+  }
+
+  ion-buttons ion-button ion-icon.panier {
+    margin-top: -13px;
+    margin-right: 10px;
+  }
+
+ion-label.active{
+  color: #250A8A;
+  margin-left: -2px;
+}
+
+ion-icon.active{
+  color: #250A8A;
+  margin-top: -13px;
+}
+
+ion-title ion-buttons ion-button ion-icon {
+  margin-top: -13px;
+}
+
+ion-label {
+  color: grey;
+  position: absolute;
+  top: 74%;
+  font-size: 7px;
+}
+
+ion-title.profile_tab{
+  margin-left: 53px;
+}
+  ion-card-subtitle{
+    font-size: 11px;
+  }
+ 
+  ion-card-subtitle.prix{
+    font-weight:bold;
+  }
+
+  .hr {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    margin-left: 20px;
+    width: 30%;
+  }
+  .hrs {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0;
+    width: 30%;
+    margin-left: 75px;
+  }
+
+  
+  .toolbar-background {
+    background-color: rgb(255, 255, 255);
+  }

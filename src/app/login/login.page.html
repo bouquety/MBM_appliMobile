@@ -23,12 +23,12 @@
                     <ion-input class="login__input" [ngModel]="password" type="password" name="password"></ion-input>
                 </ion-item>
                 <!--<p class="mdp__forgot" text-right>Mot de passe oublié?</p>-->
-                <a class="mdp__forgot small-text" [routerLink]="['/password-lost']">Mot de passe oublié?</a>
+                <a class="mdp__forgot small-text" [routerLink]="['/password-lost']">Mot de passe oublié  ?</a>
             </div>
 
             <!--shape="round"-->
             <div class="wrapper__btn">
-                <ion-button type="submit" fill="solid" expand="full">Connection</ion-button>
+                <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/accueil-chic']">Connection</ion-button>
                 <ion-button expand="full" (click)="registerModal()">
                     <ion-icon slot="start" name="logo-facebook"></ion-icon>
                     Facebook
@@ -38,5 +38,6 @@
                 <!--<ion-button expand="full" (click)="registerModal()">Inscription</ion-button>-->
             </div>
         </form>
+        
     </div>
 </ion-content>

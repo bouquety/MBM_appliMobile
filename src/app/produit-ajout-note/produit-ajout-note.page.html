@@ -1,0 +1,41 @@
+
+<ion-content>
+  <div class="main">
+    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+    <ion-icon name="cart" class="panier" (click)='goCart()'></ion-icon>
+
+    <div class="container">
+
+    <img class="image_produit" src="../../assets/img/vesteuno.jpg"/>
+    <p class="description">Veste de costume</p>
+    <p class="prix">19.99€</p>
+        <ion-icon name="cart" class="panier"></ion-icon>
+        <div class="note">   <ion-icon name="star"></ion-icon>  <p class="note_pr"> 4,9 </p> </div>
+        <div class="categorie">
+          <p  [routerLink]="['/veste-chic-produit']">Détails</p> 
+          <p class="active">Note(s)</p>
+        </div>
+
+        <p class="note_txt"> Note </p>
+        <ion-grid>
+          <ion-row class="star">
+            <ion-icon name="star" class="active"></ion-icon>       <ion-icon name="star" class="active"></ion-icon>        <ion-icon name="star" class="active"></ion-icon>             <ion-icon name="star" class="active"></ion-icon>              <ion-icon name="star" class="non_active"></ion-icon> 
+          </ion-row>
+        </ion-grid>
+<ion-row>
+  <p class="title"> Ajouter un titre </p>
+</ion-row>
+<ion-row>
+  <ion-input placeholder="Dîtes-nous ce qui vous à marquer" class="title_txt">   </ion-input>
+</ion-row>
+
+<ion-row>
+  <p class="description_d"> Description </p>
+</ion-row>
+<ion-row>
+  <ion-input class="descri_txt">   </ion-input>
+</ion-row>
+        <button class="btn" [routerLink]="['/veste-chic-produit']"> Valider </button>
+      </div>
+</div>
+</ion-content>
