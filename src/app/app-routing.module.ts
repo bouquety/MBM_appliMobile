@@ -17,6 +17,10 @@ const routes: Routes = [
     loadChildren: () => import('./password-lost/password-lost.module').then( m => m.PasswordLostPageModule)
   },
   {
+    path: 'ImieDeMerde',
+    loadChildren: () => import('./password-lost/password-lost.module').then( m => m.PasswordLostPageModule)
+  },
+  {
     path: 'landing',
     loadChildren: () => import('./landing/landing.module').then( m => m.LandingPageModule)
   },
