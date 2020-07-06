@@ -36,7 +36,6 @@
     "cordova-support-google-services": "^1.4.1",
     "core-js": "^3.6.5",
     "phonegap-plugin-multidex": "^1.0.0",
-    "phonegap-plugin-push": "^2.3.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "web": "0.0.2",
@@ -75,8 +74,7 @@
       "cordova-plugin-whitelist": {},
       "cordova-plugin-ionic-webview": {},
       "cordova-plugin-splashscreen": {},
-      "cordova-plugin-statusbar": {},
-      "phonegap-plugin-push": {}
+      "cordova-plugin-statusbar": {}
     },
     "platforms": [
       "ios",
