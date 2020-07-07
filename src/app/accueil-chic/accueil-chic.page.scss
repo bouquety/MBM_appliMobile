@@ -1,6 +1,5 @@
 .wrapper {
-    // background: linear-gradient(360deg, #5055a0, #5055a0);
-    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    background-color: white;
     min-height: 100%;
     width: 100%;
     margin: auto;
@@ -8,27 +7,26 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .wrap__img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 25vw;
-        height: 25vw;
-        border: 1px solid #ffffff;
-        border-radius: 50% 50%;
-    }
-    
 }
 
 
-.main{
-    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
-    height: 100%;
-    width: 100%;
-    display: table;
+.logo{
+  width: 78px;
+    position: absolute;
+    left: 69%;
+    top: 4%;
+}
+img{
+  margin-bottom: 10px;
+
 }
 
+.chic{
+  position: absolute;
+  color: white;
+  left: 23%;
+  top: 25%;
+}
 .img-slides {
     height: auto;
     display: block;
@@ -40,81 +38,58 @@
     width: 100%;
 }
 p{
-    color: white;
+  color: black;
+}
+.txt_bonjour{
+  color: black;
+  margin-top: 36px;
+  font-size: 13px;
+}
+.txt_vestechic {
+  margin-top: 0px;
+    font-size: 13px;
+    margin-left: 13px;
+}
+.txt_chaussurechic{
+  margin-top: 0px;
+    margin-left: 45px;
+    font-size: 13px;
+}
+.txt_pantalonchic{
+  margin-top: 0px;
+  margin-left: 59px;
+  font-size: 13px;
 }
 
-.txt_chic {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-  }
+.descri_veste{
+  font-size: 8px;
+    margin-top: 0px;
+    margin-left: 10px;
+    color: grey;
+    margin-bottom: 20px;
+}
 
-  .txt{
-    position: absolute;
-    top: 36%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    font-size: 12px;
+.descri_pantalon{
+  
+  font-size: 8px;
+  margin-top: 0px;
+  margin-left: 53px;
+  color: grey;
 
-  }
-
+}
+.logo{
+  color: black;
+}
  
 
-
-
-  .txt_veste{
-    color: grey;
-    font-size: 22px;
-    margin: 5px 0px 0px 25px;
-    margin-right: 203px;
-    }
-
-    .txt_pantalon{
-      color: grey;
-      font-size: 22px;
-      margin-left: 25px;
-      font-weight:bold;
-      margin: 0px 0px 0px 25px;
-    }
-
-    .txt_chaussure{
-      color: grey;
-      font-size: 22px;
-      margin-left: 25px;
-      font-weight:bold;
-      margin: 0px 0px 0px 25px;
-    }
-
-  .viewall{
-    margin-left: 230px;
-    font-size: 10px;
-    top: 55%;
-    color: grey;
+.veste{
+  width: 45%;
 }
 
-.viewall_pantalon{
-  margin-left: 230px;
-  font-size: 10px;
-  color: grey;
+.pantalon{
+  width: 45%;
+  margin-left: 27px;
 }
-
-.viewall_chaussure{
-  margin-left: 230px;
-  font-size: 10px;
-  color: grey;
-}
-
- 
-  ion-card{
-      width: 115px;
-      box-shadow: 5px 2px 2px rgb(90, 90, 90);
-      border-radius: 8px;
-      background: white;
-
-  }
-
   ion-icon {
     color: #515C6F;
   }
@@ -148,13 +123,6 @@ ion-label {
 ion-title.profile_tab{
   margin-left: 53px;
 }
-  ion-card-subtitle{
-    font-size: 11px;
-  }
- 
-  ion-card-subtitle.prix{
-    font-weight:bold;
-  }
 
   .hr {
     border-bottom: 1px solid #ccc;
@@ -176,22 +144,77 @@ ion-title.profile_tab{
 
   ion-slides {
     height: 100%;
-    width: 200px;
+    width: 250px;
   }
 
   .swiper-slide {
     display: block;
   }
 
- 
+ .casual{
+  color: white;
+    position: absolute;
+    top: 217%;
+ }
 
+ .txt_casual{
+  color: white;
+  position: absolute;
+  top: 224%;
+  font-weight: bold;
+  font-size: 20PX;
+ }
+
+ .decontracter{
+  color: white;
+  position: absolute;
+  top: 305%;
+ }
+
+ .txt_decontracter{
+  color: white;
+  position: absolute;
+  top: 312%;
+  font-weight: bold;
+  font-size: 20PX;
+
+ }
+
+ .street{
+  color: white;
+  position: absolute;
+  top: 385%;
+ }
+
+ .txt_street{
+  color: white;
+  position: absolute;
+  top: 392%;
+  font-weight: bold;
+  font-size: 20PX;
+ }
   .swiper-slide img {
-    max-height: 50%;
-    max-width: 80%;
-    margin: 60px 0 40px;
+ 
     pointer-events: none;
   }
 
-  .background{
-    background: radial-gradient(white, transparent);
-  }
+.titre_slide{
+  color: black;
+  font-weight: bold;
+}
+
+.descri_slide{
+  margin-left: 85px;
+    margin-top: 23px;
+    color: #250A8A;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.descri_slide_dos{
+  margin-left: 46px;
+    margin-top: 23px;
+    color: #250A8A;
+    font-size: 12px;
+    font-weight: bold;
+}

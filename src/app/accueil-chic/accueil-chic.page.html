@@ -1,160 +1,113 @@
 <ion-header>
-  <ion-toolbar>
-      <!-- Button back -->
-      <ion-buttons slot="start">
-          <ion-back-button defaultHref="landing"></ion-back-button>
-      </ion-buttons>
-      <ion-title>Accueil_Chic</ion-title>
-  </ion-toolbar>
+  
 </ion-header>
-<ion-content >
+<ion-content>
   <div class="wrapper">
-      <div class="wrap__img">
-          <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-      </div>
-      <img src="../../assets/img/chic_layout.jpeg" class="chic_layout" />
-      <p class="txt_chic">Chic</p>
-      <p class="txt">Tout vos besoins mode sous un même toit</p>
-      <ion-toolbar>
-        <ion-segment (ionChange)="segmentChanged($event)" value="Chic">
-          <ion-segment-button value="Chic">
-            Chic
-          </ion-segment-button>
-          <ion-segment-button value="Casual">
-            Casual
-          </ion-segment-button>
-          <ion-segment-button value="Street">
-            Street
-          </ion-segment-button>
-          
-          
-        </ion-segment>
-      </ion-toolbar>
-      <div class="background">
-      <p class="txt_veste"><b>Veste </b> </p>
-<a class="viewall" [routerLink]="['/vestes-chic']">Voir tout </a>
-<ion-grid>
-  <ion-row>
-<ion-card [routerLink]="['/veste-chic-produit']">
-  <ion-card-content>
-    <img src="../../assets/img/vesteuno.jpg"/>
-    <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
-    <ion-card-subtitle class="prix"> 19,99€</ion-card-subtitle>
-  </ion-card-content>
-</ion-card>
-
-<ion-card>
-  <ion-card-content>
-    <img src="../../assets/img/vestedos.jpg"/>
-    <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
-    <ion-card-subtitle class="prix"> 39,99€ </ion-card-subtitle>
-  </ion-card-content>
-</ion-card>
-</ion-row>
-<ion-row>
-  <ion-card>
-    <ion-card-content>
-      <img src="../../assets/img/vestetres.jpg"/>
-      <ion-card-subtitle>  Veste de costu...</ion-card-subtitle>
-      <ion-card-subtitle class="prix"> 79,99€ </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-card-content>
-      <img src="../../assets/img/vestequatro.jpg"/>
-      <ion-card-subtitle> Veste de costu...</ion-card-subtitle>
-      <ion-card-subtitle class="prix"> 44,99€ </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-  </ion-row>
-<ion-row>
-  <div class="hr"></div>
-  <div class="hrs"></div>
-</ion-row>
-<p class="txt_pantalon"><b>Pantalon </b> </p>
-  <a class="viewall_pantalon" [routerLink]="['/pantalons-chic']">Voir tout </a>
-<ion-row>
-  <ion-card>
-    <ion-card-content>
-      <img src="../../assets/img/pantonuno.jpg"/>
-      <ion-card-subtitle>  Pantalon</ion-card-subtitle>
-      <ion-card-subtitle class="prix"> 24,99€ </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-  
-  <ion-card>
-    <ion-card-content>
-      <img src="../../assets/img/pantodos.jpg"/>
-      <ion-card-subtitle> Pantalon</ion-card-subtitle>
-      <ion-card-subtitle class="prix"> 27,99€ </ion-card-subtitle>
-    </ion-card-content>
-  </ion-card>
-  </ion-row>
-  <ion-row>
-    <ion-card>
-      <ion-card-content>
-        <img src="../../assets/img/pantotres.jpg"/>
-        <ion-card-subtitle>  Pantalon</ion-card-subtitle>
-        <ion-card-subtitle class="prix"> 40,99€ </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
-    
-    <ion-card>
-      <ion-card-content>
-        <img src="../../assets/img/pantoquatro.jpg"/>
-        <ion-card-subtitle> Pantalon</ion-card-subtitle>
-        <ion-card-subtitle class="prix"> 34,99€ </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
-    </ion-row>
-  <ion-row>
-    <div class="hr"></div>
-    <div class="hrs"></div>
-  </ion-row>
-
-  <p class="txt_chaussure"><b>Chemise </b> </p>
-  <a class="viewall_chaussure" [routerLink]="['/chemises-chic']">Voir tout </a>
-  <ion-row>
-    <ion-card>
-      <ion-card-content>
-        <img src="../../assets/img/chemiseuno.jpg"/>
-        <ion-card-subtitle>  Chemise</ion-card-subtitle>
-        <ion-card-subtitle class="prix"> 39,99€ </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
-    
-    <ion-card>
-      <ion-card-content>
-        <img src="../../assets/img/chemisedos.jpg"/>
-        <ion-card-subtitle> Chemise</ion-card-subtitle>
-        <ion-card-subtitle class="prix"> 19,99€ </ion-card-subtitle>
-      </ion-card-content>
-    </ion-card>
-    </ion-row>
-    <ion-row>
-      <ion-card>
-        <ion-card-content>
-          <img src="../../assets/img/chemisetres.jpg"/>
-          <ion-card-subtitle>  Chemise</ion-card-subtitle>
-          <ion-card-subtitle class="prix"> 59,99€ </ion-card-subtitle>
-        </ion-card-content>
-      </ion-card>
-      
-      <ion-card>
-        <ion-card-content>
-          <img src="../../assets/img/chemisequatro.jpg"/>
-          <ion-card-subtitle> Chemise</ion-card-subtitle>
-          <ion-card-subtitle class="prix"> 79,99€ </ion-card-subtitle>
-        </ion-card-content>
-      </ion-card>
-      </ion-row>
-
+    <ion-grid>
       <ion-row>
-        <div class="hr"></div>
-        <div class="hrs"></div>
-      </ion-row>
-      <p class="txt_pantalon"><b>Marques favorites </b> </p>
+    <p class="txt_bonjour">BONJOUR ALAIN</p>
+    <img src="../../assets/img/MBM-logo-black.png" class="logo" />
+    </ion-row>
+  <ion-row>
+    <img src="../../assets/img/chic_layout.jpeg" />
+    <p class="chic"> Votre vestiaire élégant </p>
+  </ion-row>
+<ion-row>
+  <img src="../../assets/img/vestedos.jpg" class="veste"/>
+  <img src="../../assets/img/pantalonnueve.jpg" class="pantalon" />
+</ion-row>
+<ion-row>
+  <p class="txt_vestechic"> VESTES CHIC</p>
+
+  <p class="txt_pantalonchic"> PANTALON CHIC</p>
+
+</ion-row>
+
+<ion-row>
+  <p class="descri_veste"> Lorem Ipsum classe veste ! </p>
+  <p class="descri_pantalon"> Etre à la pointe de la mode ! </p>
+
+</ion-row>
+
+<ion-row>
+  <img src="../../assets/img/chemisecinco.jpg" class="veste"/>
+  <img src="../../assets/img/chaussure_classe.jpg" class="pantalon" />
+</ion-row>
+
+<ion-row> 
+  <p class="txt_vestechic"> CHEMISE CHIC</p>
+
+  <p class="txt_chaussurechic"> CHAUSSURE CHIC</p>
+
+</ion-row>
+
+<ion-row>
+  <p class="descri_veste"> Lorem Ipsum classe veste ! </p>
+  <p class="descri_pantalon"> Etre à la pointe de la mode ! </p>
+
+</ion-row>
+
+<ion-row>
+  
+      <img src="../../assets/img/Casual.jpg" />
+    </ion-row>
+<p class="casual">CASUAL</p>
+<p class="txt_casual"> Un style adapté à toute les situations </p>
+  <ion-row>
+    <img src="../../assets/img/bggg.jpg"/>
+  </ion-row>
+  <p class="decontracter">DÉCONTRACTER</p>
+<p class="txt_decontracter"> Un style confort & décontracté </p>
+  <ion-row>
+    <div class="streetwear_img">
+      <img src="../../assets/img/nikejogo.jpg"/>
+
+    </div>
+  </ion-row>
+  <p class="street">STREETWEAR</p>
+<p class="txt_street"> Le style de la rue  </p>
+  <ion-row>
+    <p class="titre_slide"> Les tendances </p>
+    <p class="descri_slide"> Voir plus </p>
+  </ion-row>
+        <ion-row>
+          <ion-slides>
+  
+            <ion-slide>
+              <div class="slide">
+                <img src="../../assets/img/joggo.jpg"/>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/pantalonocho.jpg"/>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/vesteuno.jpg"/>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/adid.png"/>
+            </ion-slide>
+  
+            <ion-slide>
+              <img src="../../assets/img/armand_thierry.png"/>
+            </ion-slide>
+  
+            <ion-slide>
+              <img src="../../assets/img/levis.png"/>
+            </ion-slide>
+    
+          </ion-slides>
+          </ion-row>
+
+    
+
+<ion-row>
+  <p class="titre_slide"> Les marques favorites </p>
+  <p class="descri_slide_dos"> Voir plus </p>
+</ion-row>
       <ion-row>
         <ion-slides>
 
@@ -190,7 +143,6 @@
 
 </ion-grid>
     
-</div>
   </div>
 </ion-content>
 
