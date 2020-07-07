@@ -5,18 +5,29 @@
   <div class="wrapper">
     <ion-grid>
       <ion-row>
+        <ion-col>
     <p class="txt_bonjour">BONJOUR ALAIN</p>
+    </ion-col>
+    <ion-col>
     <img src="../../assets/img/MBM-logo-black.png" class="logo" />
+    </ion-col>
     </ion-row>
   <ion-row>
+    <ion-col>
     <img src="../../assets/img/chic_layout.jpeg" [routerLink]="['/vestes-chic']" />
     <p class="chic"> Votre vestiaire élégant </p>
+    </ion-col>
   </ion-row>
 <ion-row>
-  <img src="../../assets/img/vestedos.jpg" class="veste" [routerLink]="['/vestes-chic']"/>
-  <img src="../../assets/img/pantalonnueve.jpg" class="pantalon" [routerLink]="['/vestes-chic']" />
+  <ion-col size="6">
+    <img src="../../assets/img/vestedos.jpg"  [routerLink]="['/vestes-chic']"/>
+  </ion-col>
+  <ion-col size="6">
+    <img src="../../assets/img/pantalonnueve.jpg"  [routerLink]="['/vestes-chic']" />
+  </ion-col>
 </ion-row>
 <ion-row>
+
   <p class="txt_vestechic"> VESTES CHIC</p>
 
   <p class="txt_pantalonchic"> PANTALON CHIC</p>
@@ -70,7 +81,75 @@
     <p class="titre_slide"> Les tendances </p>
     <p class="descri_slide"> Voir plus </p>
   </ion-row>
+        <ion-row>
+          <ion-slides>
   
+            <ion-slide>
+              <div class="slide">
+                <img src="../../assets/img/joggo.jpg"/>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/pantalonocho.jpg"/>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/vesteuno.jpg"/>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/adid.png"/>
+            </ion-slide>
+  
+            <ion-slide>
+              <img src="../../assets/img/armand_thierry.png"/>
+            </ion-slide>
+  
+            <ion-slide>
+              <img src="../../assets/img/levis.png"/>
+            </ion-slide>
+    
+          </ion-slides>
+          </ion-row>
+
+    
+
+<ion-row>
+  <p class="titre_slide"> Les marques favorites </p>
+  <p class="descri_slide_dos"> Voir plus </p>
+</ion-row>
+      <ion-row>
+        <ion-slides>
+
+          <ion-slide>
+            <div class="slide">
+              <img src="../../assets/img/devred.png"/>
+            </div>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/hm.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/celio.png"/>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/adid.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/armand_thierry.png"/>
+          </ion-slide>
+
+          <ion-slide>
+            <img src="../../assets/img/levis.png"/>
+          </ion-slide>
+  
+        </ion-slides>
+        </ion-row>
   
 
 </ion-grid>
