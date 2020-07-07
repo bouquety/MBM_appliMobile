@@ -46,9 +46,9 @@ p{
   font-size: 13px;
 }
 .txt_vestechic {
-  margin-top: 0px;
-    font-size: 13px;
-    margin-left: 13px;
+  margin-top: -16px;
+  font-size: 13px;
+  margin-left: 13px;
 }
 .txt_chaussurechic{
   margin-top: 0px;
@@ -56,26 +56,38 @@ p{
     font-size: 13px;
 }
 .txt_pantalonchic{
-  margin-top: 0px;
-  margin-left: 59px;
+  margin-top: -16px;
+  margin-left: 14px;
   font-size: 13px;
 }
 
 .descri_veste{
   font-size: 8px;
-    margin-top: 0px;
-    margin-left: 10px;
-    color: grey;
-    margin-bottom: 20px;
+  margin-top: -10px;
+  margin-left: 10px;
+  color: grey;
 }
 
 .descri_pantalon{
   
   font-size: 8px;
-  margin-top: 0px;
-  margin-left: 53px;
+  margin-top: -10px;
+  margin-left: 18px;
   color: grey;
 
+}
+
+.descri_chemise{
+  font-size: 8px;
+  margin-top: -10px;
+  margin-left: 10px;
+  color: grey;
+}
+.descri_costu{
+  font-size: 8px;
+  margin-top: -10px;
+  margin-left: 18px;
+  color: grey;
 }
 .logo{
   color: black;
@@ -154,44 +166,51 @@ ion-label {
  .casual{
   color: white;
     position: absolute;
-    top: 217%;
+    top: 238%;
+    left: 5%;
  }
 
  .txt_casual{
   color: white;
-  position: absolute;
-  top: 224%;
-  font-weight: bold;
-  font-size: 20PX;
+    position: absolute;
+    top: 244%;
+    left: 5%;
+    font-size: 20PX;
+    font-weight: bold;
+
  }
 
  .decontracter{
   color: white;
-  position: absolute;
-  top: 305%;
+    position: absolute;
+    top: 325%;
+    left: 5%;
  }
 
  .txt_decontracter{
   color: white;
   position: absolute;
-  top: 312%;
+  top: 333%;
   font-weight: bold;
   font-size: 20PX;
+  left: 5%;
 
  }
 
  .street{
   color: white;
   position: absolute;
-  top: 385%;
+  top: 403%;
+  left: 5%;
  }
 
  .txt_street{
   color: white;
   position: absolute;
-  top: 392%;
+  top: 411%;
   font-weight: bold;
   font-size: 20PX;
+  left: 5%;
  }
   .swiper-slide img {
  
