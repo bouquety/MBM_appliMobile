@@ -1,9 +1,18 @@
 
 .main{
-    background: linear-gradient(#9C97E5 ,#9C97E5, rgb(190, 172, 236) 33.33%, rgb(189, 170, 238) 30%) !important;
+    background: white !important;
     height: 100%;
     width: 100%;
     display: table;
+}
+
+.txt_vestes {
+  width: 40%;
+  height: auto;
+  display: block;
+  padding: 15px;
+  margin-left: 95px;
+  color: #515C6F;
 }
 .arrowback{
   position: absolute;
@@ -13,19 +22,26 @@
     width: 32%;
     margin-left: 2px;
 }
-.txt_vestes {
-    width: 40%;
-    height: auto;
-    display: block;
-    padding: 15px;
-    margin-left: 95px;
-    color: #515C6F;
-}
+
 
 p{
     color: white;
 }
 
+.prix{
+  color: black;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 1px;
+    margin-top: 0px;
+}
+
+.description {
+    font-size: 12px;
+    color: grey;
+    margin-top: 0px;
+    margin-top: -19px;
+}
 
 
 ion-icon {
