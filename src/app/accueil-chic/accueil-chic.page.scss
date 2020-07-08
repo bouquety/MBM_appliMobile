@@ -49,22 +49,27 @@ p{
   margin-top: -16px;
   font-size: 13px;
   margin-left: 13px;
+  font-weight: bold;
 }
 .txt_chaussurechic{
   margin-top: -16px;
   margin-left: 10px;
   font-size: 13px;
+  font-weight: bold;
+
 }
 .txt_pantalonchic{
   margin-top: -16px;
   margin-left: 14px;
   font-size: 13px;
+  
 }
 
 .vestechic{
   margin-top: -16px;
     margin-left: 15px;
     font-size: 13px;
+    font-weight: bold;
 }
 .descri_veste{
   font-size: 8px;
@@ -172,6 +177,8 @@ ion-title.profile_tab{
     margin-top: -15px;
     margin-left: 18px;
     font-size: 13px;
+    font-weight: bold;
+
   }
  .casual{
   color: white;
@@ -209,18 +216,12 @@ ion-title.profile_tab{
 
  .street{
   color: white;
-    position: absolute;
-    top: 384%;
-    left: 5%;
+  margin-top: -100px;
  }
 
  .txt_street{
+  margin-top: -66px;
   color: white;
-  position: absolute;
-  top: 393%;
-  font-weight: bold;
-  font-size: 20PX;
-  left: 5%;
  }
   .swiper-slide img {
  
