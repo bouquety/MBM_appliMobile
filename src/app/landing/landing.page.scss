@@ -2,7 +2,7 @@
 
 .container {
     // background: linear-gradient(360deg, #5055a0, #5055a0);
-    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
+    background: white;
     height: 100%;
     width: 100%;
     margin: auto;
@@ -24,12 +24,7 @@
     border-radius: 50% 50%;
 }
 
-.img-slides {
-    width: 100%;
-    // height: auto;
-    // display: block;
-    // padding: 20px;
-}
+
 
 h2 {
     display: block;
@@ -42,101 +37,27 @@ h2 {
 }
 
 p {
-    color: white;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.connexion{
+    font-size: 9px;
+    color: grey;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+H2{
+    color: black;
     font-family: 'Poppins', sans-serif;
     text-align: center;
 }
 
-.wrap__btn {
-    // margin-top: 150px;
-}
-
-ion-button {
-    width: 80vw;
-    --background: #564D85;
-    --color: #ffffff;
-}
-
-.btn {
-    width: 90%;
-    padding: 15px;
-    background: linear-gradient(360deg, #5055a0, #5055a0);
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    border-radius: 50px;
-    margin-bottom: 10%;
-    color: #fff;
-}
 
 ion-slides {
-    --bullet-background-active: #0A7860;
-}
+    width: 250px;
+  }
 
-
-/*================================== END MEDIA QUERIES, FOR ONLY DESKTOPS ==============================*/
-
-
-/*================================== MEDIA QUERIES, FOR ONLY IPHONE, ANDROID, ETC.. ==============================*/
-
-// @media only screen and (min-width: 320px) and (max-width: 812px) {
-//     ion-content {
-//         background-color: darken($color: #963939, $amount: 0);
-//     }
-//     .img-slides {
-//         width: 100%;
-//         height: auto;
-//         display: block;
-//         margin-top: 10%;
-//     }
-//     h2 {
-//         display: block;
-//         font-family: 'Poppins', sans-serif;
-//         font-weight: 600;
-//         font-size: 30px;
-//         color: #1f2140;
-//         margin-top: 0px;
-//     }
-//     p {
-//         padding: 10px;
-//         font-family: 'Poppins', sans-serif;
-//         color: white;
-//     }
-//     .btn {
-//         width: 50%;
-//         padding: 20px;
-//         background: linear-gradient(360deg, #27d0c9, #27d0c9);
-//         font-family: "Poppins";
-//         box-shadow: none;
-//         display: block;
-//         margin: 0px auto;
-//         border-radius: 50px;
-//         color: #fff;
-//     }
-//     ion-slides {
-//         --bullet-background-active: #27d0c9;
-//     }
-// }
-
-/*================================== END MEDIA QUERIES, FOR ONLY IPHONE, ANDROID, ETC ==============================*/
-
-
-/*================================== MEDIA QUERIES, FOR ONLY TABLETS ==============================*/
-
-// @media only screen and (min-width: 768px) and (max-width: 900px) {
-//     .btn {
-//         width: 40%;
-//         font-size: 25px;
-//     }
-//     p {
-//         font-size: 35px;
-//         color: white;
-//         padding-left: 40px;
-//         padding-right: 40px;
-//     }
-//     h2 {
-//         font-size: 60px;
-//     }
-//     /*================================== END MEDIA QUERIES, FOR ONLY TABLETS ==============================*/
-// }
+  .swiper-slide {
+    display: block;
+  }
