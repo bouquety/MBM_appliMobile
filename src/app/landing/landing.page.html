@@ -1,33 +1,28 @@
-<ion-header>
-    <ion-toolbar>
-        <!-- Button back -->
-        <!--<ion-buttons slot="start">
-            <ion-back-button defaultHref="home"></ion-back-button>
-        </ion-buttons>-->
-        <ion-title>Landing Page</ion-title>
-    </ion-toolbar>
-</ion-header>
 <ion-content>
     <div class="container">
+        <ion-slides>
 
-        <div class="wrap__img">
-            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-        </div>
-
-
-        <h2>Boutique de vêtements homme personnalisés Bite Noir</h2>
-
-        <div class="wrap__btn">
-            <ion-button fill="solid" [routerLink]="['/register']" expand="block">
-                <!--<ion-icon slot="start" name="logo-facebook"></ion-icon>-->
-                DEMARRER EXPERIENCE
-            </ion-button>
-            <!-- #564D85 shape="round" -->
-            <ion-button fill="solid" [routerLink]="['/login']" expand="block">
-                <!--<ion-icon slot="start" name="person"></ion-icon>-->
-                Connection
-            </ion-button>
-        </div>
-
+            <ion-slide>
+              <div class="slide">
+                <img src="../../assets/img/slideun.png"/>
+                <h2>Bienvenue</h2>
+                <p> Votre <b>boutique de vêtement personalisée </b> pour homme selon vos goûts.</p>
+              </div>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/slidedeux.png"/>
+              <h2>Comment ça marche?</h2>
+              <p><b>A l'inscription</b>, remplissez un questionnaire de goût, vos mensurations, pour qu'on puisse établir votre profil et vous proposez des vêtements en adéquation de vos réponses.</p>
+            </ion-slide>
+    
+            <ion-slide>
+              <img src="../../assets/img/slidetrois.png"/>
+              <h2>Prêt à commencer ?</h2>
+              <ion-button fill="clear" [routerLink]="['/register']" >Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+              <p [routerLink]="['/login']" class="connexion"> Dèja un compte ? <b> connectez-vous ! </b> </p>
+            </ion-slide>
+    
+          </ion-slides>
     </div>
 </ion-content>
