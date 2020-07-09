@@ -1,20 +1,12 @@
-<ion-header>
-    <ion-toolbar>
-        <!-- Button back -->
-        <ion-buttons slot="start">
-            <ion-back-button defaultHref="landing"></ion-back-button>
-        </ion-buttons>
-        <ion-title>Connection</ion-title>
-    </ion-toolbar>
-</ion-header>
+
 <ion-content>
     <div class="wrapper">
         <div class="wrap__img">
-            <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+            <img src="../../assets/img/MBM-logo-black.png" class="img-slides" />
         </div>
         <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
             <div class="wrapper_item">
-                <ion-item class="">
+                <ion-item>
                     <ion-label class="login__label" position="floating">Email</ion-label>
                     <ion-input class="login__input" [ngModel]="email" type="email" name="email"></ion-input>
                 </ion-item>
@@ -28,11 +20,7 @@
 
             <!--shape="round"-->
             <div class="wrapper__btn">
-                <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/accueil-chic']">Connection</ion-button>
-                <ion-button expand="full" (click)="registerModal()">
-                    <ion-icon slot="start" name="logo-facebook"></ion-icon>
-                    Facebook
-                </ion-button>
+                <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/accueil-chic']">SE CONNECTER</ion-button>
                 <!--<p class="no__account" text-center>Pas de compte? S'inscrire?</p>-->
                 <a class="no__account small-text" [routerLink]="['/register']">Pas de compte? S'inscrire?</a>
                 <!--<ion-button expand="full" (click)="registerModal()">Inscription</ion-button>-->

@@ -1,4 +1,4 @@
-<ion-content>
+<ion-content fullscreen>
     <div class="container">
         <ion-slides>
 
@@ -7,6 +7,7 @@
                 <img src="../../assets/img/slideun.png"/>
                 <h2>Bienvenue</h2>
                 <p> Votre <b>boutique de vêtement personalisée </b> pour homme selon vos goûts.</p>
+                <p [routerLink]="['/login']" class="connexion"> Dèja un compte ? <b> connectez-vous ! </b> </p>
               </div>
             </ion-slide>
     
@@ -14,6 +15,7 @@
               <img src="../../assets/img/slidedeux.png"/>
               <h2>Comment ça marche?</h2>
               <p><b>A l'inscription</b>, remplissez un questionnaire de goût, vos mensurations, pour qu'on puisse établir votre profil et vous proposez des vêtements en adéquation de vos réponses.</p>
+              <p [routerLink]="['/login']" class="connexion"> Dèja un compte ? <b> connectez-vous ! </b> </p>
             </ion-slide>
     
             <ion-slide>
