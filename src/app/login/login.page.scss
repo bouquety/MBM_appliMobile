@@ -8,12 +8,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 21px;
     .wrap__img {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 50vw;
         height: 50vw;
         border: 1px solid #ffffff;
         border-radius: 50% 50%;
@@ -36,6 +36,7 @@
             // text-align: center;
         }
         .wrapper_item {
+            margin-top: -68px;
             // margin: 0 50px 0 0;
             // border: #ffffff 1px solid;
             ion-item {
@@ -50,6 +51,9 @@
             }
             ion-label{
                 color: grey;
+            }
+            ion-input{
+                color: black;
             }
             .mdp__forgot {
                 color: #564D85;
@@ -73,3 +77,18 @@
     }
 }
 
+img{
+    border: 0;
+    width: 111%;
+    margin-top: 111px !important;
+}
+
+.MBM{
+    color: grey;
+    margin-top: 75px;
+}
+
+.txt_MBM{
+    color: grey;
+    margin-top: -10px;
+}
