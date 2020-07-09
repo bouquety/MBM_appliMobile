@@ -1,47 +1,120 @@
 
 <ion-content>
   <div class="main">
-    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
-
-    <div class="container">
-
-    <img class="image_produit" src="../../assets/img/vesteuno.jpg"/>
-    <p class="description">Veste de costume</p>
-    <p class="prix">19.99€</p>
-    <ion-icon name="cart" class="panier" (click)='goCart()'></ion-icon>
-
-    <div class="note">   <ion-icon name="star"></ion-icon>  <p class="note_pr"> 4,9 </p> </div>
-    <div class="categorie">
-      <p class="active">Détails</p> 
-      <p [routerLink]="['/produit-view-note']">Note(s)</p>
+    <div class="detail_vetement">
+      <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+      <img class="image_produit" src="../../assets/img/vesteuno.jpg"/>
+      <ion-icon name="cart" class="panier" (click)='goCart()'></ion-icon>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="prix"><b>39.99€</b></p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="description">          Zara - Veste de costume classe            </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="hr"></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-select placeholder="COULEUR" class="couleur">
+              <ion-select-option value="S">Bleu</ion-select-option>
+              <ion-select-option value="M">Rouge</ion-select-option>
+              <ion-select-option value="L">Orange</ion-select-option>
+              <ion-select-option value="XL">Violet</ion-select-option>
+            </ion-select>
+            <div class="hrs"></div>
+          </ion-col>
+        <ion-col size="6">
+          <p class="taille">M </p>
+        </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="hr"></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <button class="btn"(click)='presentAlert()'> AJOUTER AU PANIER </button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
-        <p class="marque">Marque </p>
-        <p class="marque_rpn">Zara </p>
 
-        <p class="codeproduit">Code Produit </p>
-        <p class="codeproduit_rpn"> 0590458902809 </p>
-
-
-        <p class="type">Type </p>
-        <p class="type_rpn"> Veste de costume </p>
-
-        <p class="couleur">Couleur </p>
-        <ion-select placeholder="Couleur" class="couleur_rpn">
-          <ion-select-option value="S">Bleu</ion-select-option>
-          <ion-select-option value="M">Rouge</ion-select-option>
-          <ion-select-option value="L">Orange</ion-select-option>
-          <ion-select-option value="XL">Violet</ion-select-option>
-        </ion-select>
-
-        <p class="categorie_txt">Catégorie </p>
-        <p class="categorie_txt_rpn">Chic </p>
-
-        <p class="taille">Taille </p>
-        <p class="taille_rpn">M </p>
-
-      <div class="hr"></div>
-
-      <button class="btn"(click)='presentAlert()'> Ajouter au panier </button>
+    <div class="detail_produit">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <p class="info_prd">Info produit</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="hr"></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="livraison"> Livraison et retour gratuit. Offre soumise à condition </p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="hr"></div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <p class="guide_taille"> Pourquoi vous ne pouvez pas choisir votre taille ? </p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </div>
+<div class="slide_plus">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <p class="titre_slide"> <b> VOUS AIMEREZ ÉGALEMENT </b> </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-slides>
+
+        <ion-slide>
+            <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+        <ion-slide>
+          <img src="../../assets/img/joggo.jpg" />
+        </ion-slide>
+
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+</div>
+
 </div>
 </ion-content>
