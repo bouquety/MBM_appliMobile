@@ -1,106 +1,87 @@
+
 <ion-content>
   <div class="main">
-    <div class="container">
+    <div class="detail_vetement">
       <ion-grid>
         <ion-row>
-          <ion-row>
-            <img src="../../assets/img/MBM-logo-white.png" class="logo" />
-          </ion-row>
-          <p class="paiement"> Paiement </p>
-          </ion-row>
-          </ion-grid>
-          <ion-row>
-            <p class=" livraison">Adresse de livraison</p>
-          </ion-row>
-          <ion-row>
-            <p class="nom">James Rodriguez</p>
-          </ion-row>
-          <ion-row>
-            <p class="adresse_un">234 Avenue des Lilas</p>
-          </ion-row>
-          <ion-row>
-            <p class="adresse_deux">Moissy-Cramayel, 77550 </p>
-          </ion-row>
-          <ion-row>
-            <p class="pays">France</p>
-          </ion-row>
-          <ion-row>
-            <div class="hr_un"></div>
-          </ion-row>
-          <ion-row>
-            <p class="methode_paie">Méthode de paiement</p>
-          </ion-row>
-          <ion-row>
-            <p class="carte_bleu"> Master Card fini par  **00 </p>
-            <ion-icon name="card" class="img_carte"></ion-icon>
-          </ion-row>
-          <ion-row>
-            <div class="hr_deux"></div>
-          </ion-row>
-          <ion-row>
-            <p class="item">Item(s)</p>
-          </ion-row>
+          <ion-col>
+            <p class="paiement"> Paiement</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-row>
+              <p class=" livraison">Adresse de livraison</p>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <p class="nom">James Rodriguez</p>
+        </ion-row>
+        <ion-row>
+          <p class="adresse_un">234 Avenue des Lilas</p>
+        </ion-row>
+        <ion-row>
+          <p class="adresse_deux">Moissy-Cramayel, 77550 </p>
+        </ion-row>
+        <ion-row>
+          <p class="pays">France</p>
+        </ion-row>
+        
+       
+      </ion-grid>
+    </div>
 
-          <ion-row>
-            <div class="background_pr"> <img class="img_produit" src="../../assets/img/pantodos.jpg"> </div>
-            <p class="type_pr"> Pantalon Chic</p>
-            <p class="taille_pr"> M -</p>
-            <p class="couleur_pr"> Gris </p>
-            <p class="prix_pr"> 49.00€ </p>
-          </ion-row>
-          <div class="hr_trois"></div>
-          <!-- <ion-row>
-            <div class="background_prd"> <img class="img_produit" src="../../assets/img/pantodos.jpg"> </div>
-            <p class="type_prd"> Pantalon Chic</p>
-            <p class="taille_prd"> M -</p>
-            <p class="couleur_prd"> Gris </p>
-            <p class="prix_prd"> 49.00€ </p>
-          </ion-row> -->
-          <!-- <ion-row>
-            <div class="background_prt"> <img class="img_produit" src="../../assets/img/pantodos.jpg"> </div>
-            <p class="type_prt"> Pantalon Chic</p>
-            <p class="taille_prt"> M -</p>
-            <p class="couleur_prt"> Gris </p>
-            <p class="prix_prt"> 49.00€ </p>
-          </ion-row> -->
-          <p class="total"> Total : </p>
+    <div class="detail_produit">
+      <ion-grid>
+      <ion-row>
+          <p class="methode_paie">Méthode de paiement</p>
+        </ion-row>
+        <ion-row>
+          <p class="carte_bleu"> Master Card fini par  **00 </p>
+          <ion-icon name="card" class="img_carte"></ion-icon>
+        </ion-row>
+      </ion-grid>
+    </div>
+<div class="slide_plus">
+  <ion-grid>
+    <ion-row>
+      <p class="item">Item(s)</p>
+    </ion-row>
 
-          <p class="prix_total">89.99€</p>
-          <p class="livraison_gratuit">Livraison gratuite</p>
-          
-          <button class="btn" [routerLink]="['/paiement-valide']"> Paiment </button>
-      </div>
-      </div>
-</ion-content>
-<ion-footer class="ion-no-border">
-  <ion-toolbar class="footer">
-    <!-- <ion-title>
-      Click to Add Text
-    </ion-title> -->
-    <ion-buttons slot="start">
-      <ion-button [routerLink]="['/accueil-chic']">
-        <ion-icon slot="start" name="home" class="accueil"></ion-icon>
-        <ion-label class="accueil"> Home</ion-label>
-      </ion-button>
-    </ion-buttons>
-
+    <ion-row>
+      <ion-col size="3">
+      <div class="background_pr"> <img class="img_produit" src="../../assets/img/vesteuno.jpg"> </div>
+    </ion-col>
+    <ion-col>
+      <p class="type_pr"> Veste</p>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+        <p class="taille_pr"> M - Gris</p>
+    
+    </ion-row>
+    <ion-row>
+      
+        <p class="prix_pr"> 39.99€ </p>
    
+    </ion-row>
 
-    <ion-buttons slot="end">
-      <ion-button  >
-        <ion-icon  slot="end" name="cart" class="panier" class="active"></ion-icon>
-        <ion-label class="active"> panier</ion-label>
-      </ion-button>
-    </ion-buttons>
+    <div class="hr_trois"></div>
+       
+    <p class="total"> Total : </p>
 
-    <ion-title>
-      <ion-buttons>
-        <ion-button [routerLink]="['/profil']">
-          <ion-icon  name="person" ></ion-icon>
-          <ion-label > Profile</ion-label>
-        </ion-button>
-      </ion-buttons>
-    </ion-title>
- 
-  </ion-toolbar>
-</ion-footer>
+    <p class="prix_total">39.99€</p>
+    <p class="livraison_gratuit">Livraison gratuite</p>
+    
+    <button class="btn" [routerLink]="['/paiement-valide']"> Paiement </button>
+
+  
+      
+    
+  </ion-grid>
+</div>
+
+</div>
+</ion-content>

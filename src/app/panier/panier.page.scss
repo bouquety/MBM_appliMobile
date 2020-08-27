@@ -1,6 +1,6 @@
 .main{
   background: lightgray;
-  height: 147vh;
+  height: 100%;
   width: 100%;
   display: table;
 
@@ -93,11 +93,12 @@ ion-toolbar{
 
 ion-title{
   font-size: 14px;
+  margin-left: -60px;
 }
 .txt_article{
   color: grey;
     font-size: 11px;
-    margin-left: 95px;
+    margin-left: 82px;
 }
 
 .prix {
@@ -105,6 +106,64 @@ color: black;
 }
 
 
-img{
-  width: 2%;
+
+
+.Titre_pr{
+  color: #515C6F;
+    font-weight: bold;
+    position: absolute;
+    top: -4%;
+    margin-left: 71px;
+}
+
+.descri_pr{
+  color: #515C6F;
+  position: absolute;
+  top: 20%;
+  margin-left: 72px;
+  font-size: 10px;
+}
+
+.taille_pr{
+  color: #515C6F;
+  position: absolute;
+  top: 57%;
+  margin-left: 73px;
+  font-size: 12px;
+}
+.couleur_pr{
+  color: #515C6F;
+  position: absolute;
+  top: 42%;
+  margin-left: 72px;
+  font-size: 12px;
+}
+
+.prix_pr{
+  color: #515C6F;
+  position: absolute;
+  top: 73%;
+  margin-left: 73px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+ .btn {
+  width: 88%;
+  padding: 15px;
+  background: #564D85;
+  --background: #564D85;
+  box-shadow: none;
+  display: block;
+  margin: 0px auto;
+  border-radius: 50px;
+  margin-bottom: 10%;
+  color: #fff;
+
+}
+
+.paiement_bloc{
+  background: white;
+  margin-top: 209px;
+  height: 17%;
 }

@@ -2,7 +2,8 @@
   <ion-toolbar>
       <!-- Button back -->
       <ion-buttons slot="start">
-      </ion-buttons>
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
       <ion-title>PANIER</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -12,7 +13,7 @@
       <ion-grid>
         <ion-row>
           <ion-col>
-           <p class="txt_article"> 3 articles : total <b> 50.99 € </b>  </p> 
+           <p class="txt_article"> 1 articles : total <b> 39.99 € </b>  </p> 
           </ion-col>
         </ion-row>
         <ion-row>
@@ -21,55 +22,21 @@
           </ion-col>
         </ion-row>
         <ion-row>
-          <ion-col>
+          <ion-col size="3">
             <img src="../../assets/img/vesteuno.jpg"/>
-          </ion-col>
-          <ion-col>
-            <p> <b>19.99€</b></p>
+            <p class="Titre_pr"> Veste</p>
+            <p class="descri_pr">ARMAND THIERRY</p>
+            <p class="couleur_pr">Gris</p>
+            <p class="taille_pr">M</p>
+            <p class="prix_pr">39.99€</p>
           </ion-col>
         </ion-row>
       </ion-grid>
     </div>
 
-  
-<div class="slide_plus">
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <p class="titre_slide"> <b> VOUS AIMEREZ ÉGALEMENT </b> </p>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-slides>
-
-        <ion-slide>
-            <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-        <ion-slide>
-          <img src="../../assets/img/joggo.jpg" />
-        </ion-slide>
-
-      </ion-slides>
-    </ion-row>
-  </ion-grid>
-</div>
+    <div class="paiement_bloc">
+      <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/paiement']">COMMANDER</button>  
+    </div>
 
 </div>
 </ion-content>

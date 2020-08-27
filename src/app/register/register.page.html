@@ -1,12 +1,16 @@
+<ion-header>
+    <ion-toolbar>
+        <!-- Button back -->
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="landing"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Inscription  </ion-title>
+    </ion-toolbar>
+</ion-header>
+
 <ion-content fullscreen>
     <div class="container">
-        <ion-toolbar>
-            <!-- Button back -->
-            <ion-buttons slot="start">
-                <ion-back-button defaultHref="landing"></ion-back-button>
-            </ion-buttons>
-            <ion-title>Inscription  </ion-title>
-        </ion-toolbar>
+        
         <div class="time-line">
             <div class="time-line__wrapper">
                 <span class="time-line__span active">1</span>
@@ -25,7 +29,7 @@
         </div>
         <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
             <ion-item lines="full">
-                <ion-label position="floating">Name</ion-label>
+                <ion-label position="floating">Nom Complet</ion-label>
                 <ion-input type="text" required></ion-input>
               </ion-item>
               <ion-item lines="full">
@@ -33,12 +37,28 @@
                 <ion-input type="text" required></ion-input>
               </ion-item>
               <ion-item lines="full">
-                <ion-label position="floating">Mot de Passe</ion-label>
+                <ion-label position="floating">Adresse</ion-label>
                 <ion-input type="text" required></ion-input>
               </ion-item>
               <ion-item lines="full">
-                <ion-label position="floating">Confirmation mot de passe</ion-label>
+                <ion-label position="floating">Ville</ion-label>
                 <ion-input type="text" required></ion-input>
+              </ion-item>
+              <ion-item lines="full">
+                <ion-label position="floating">Code Postal</ion-label>
+                <ion-input type="text" required></ion-input>
+              </ion-item>
+              <ion-item lines="full">
+                <ion-label position="floating">Pays</ion-label>
+                <ion-input type="text" required></ion-input>
+              </ion-item>      
+              <ion-item lines="full">
+                <ion-label position="floating">Mot de Passe</ion-label>
+                <ion-input type="password" required></ion-input>
+              </ion-item>
+              <ion-item lines="full">
+                <ion-label position="floating">Confirmation mot de passe</ion-label>
+                <ion-input type="password" required></ion-input>
               </ion-item>
                 
                 
@@ -50,6 +70,6 @@
                 <ion-button type="submit" fill="solid" expand="full" (click)="goRegister2()">Connection</ion-button>
             </div> -->
         </form>
-            <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/register2']">CONTINUER</ion-button>
+            <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/register2']">CONTINUER</button>
     </div>
 </ion-content>

@@ -1,5 +1,5 @@
 .main{
-    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
+    background: lightgray;
     height: 100%;
     width: 100%;
     display: table;
@@ -25,7 +25,7 @@
 
 .txt_paie{
     position: absolute;
-    left: 13%;
+    left: 7%;
     top: 55%;
     font-size: 13px;
     color:#515C6F;
@@ -34,7 +34,7 @@
 .btn{
     width: 57%;
     padding: 15px;
-    background: linear-gradient(360deg, #5055a0, #5055a0);
+    background: #564D85;
     box-shadow: none;
     display: block;
     margin: 0px auto;

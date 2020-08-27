@@ -1,7 +1,7 @@
 .container {
     // background: linear-gradient(360deg, #5055a0, #5055a0);
     background: white;
-    height: 171vh;
+    height: 133vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -63,11 +63,18 @@ ion-title{
 
 
 
-ion-button {
+.btn {
     width: 80vw;
-    --background: #564D85;
-    --color: #ffffff;
     border: #ffffff;
+    padding: 15px;
+    background: #564D85;
+    --background: #564D85;
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
 }
 
 
@@ -75,6 +82,8 @@ ion-button {
 
 ion-label{
     color: black;
+    font-size: 13px;
+    margin-top: 22px;
 }
 
 ion-item{
@@ -99,8 +108,16 @@ ion-list ion-radio-group ion-item ion-label{
 
 ion-list ion-item ion-label{
     color: black;
+    margin-left: 21px;
 }
 
+ion-item ion-label{
+    margin-left: 21px;
+}
+
+ion-item ion-input{
+    margin-left: 21px;
+}
 ion-select{
     color: black;
 }

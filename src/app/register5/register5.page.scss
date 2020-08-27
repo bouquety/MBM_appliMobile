@@ -63,11 +63,18 @@ ion-title{
 
 
 
-ion-button {
+.btn {
     width: 80vw;
-    --background: #564D85;
-    --color: #ffffff;
     border: #ffffff;
+    padding: 15px;
+    background: #564D85;
+    --background: #564D85;
+    box-shadow: none;
+    display: block;
+    margin: 0px auto;
+    border-radius: 50px;
+    margin-bottom: 10%;
+    color: #fff;
     margin-bottom: 45px;
 }
 

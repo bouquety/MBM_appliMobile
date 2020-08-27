@@ -1,58 +1,73 @@
-<ion-content>
+<ion-header>
+    <ion-toolbar>
+        <!-- Button back -->
+        
+        <ion-title class="titre_tittle">MON PROFIL</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
     <div class="main">
-        <div class="container">
-            <img src="../../assets/img/MBM-logo-white.png" class="logo" />
-            <img src="../../assets/img/BISSAKA.jpg" class="PP" />
-            <p class="name">Eustass kidd</p>
-            <p class="info">Info perso</p>
-            <p class="gout">Goûts Sex</p>
-            <div class="hr"></div>
-            <ion-grid>
-                <div class="background_info">
+      <div class="identifiant_bloc">
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-icon class="pinceau_un" name="pencil-outline"></ion-icon>
+                </ion-col>
+            </ion-row>
+          <ion-row>
+            <ion-col>
+             <p class="Nom">  <b> James rodriguez </b>  </p> 
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <p class="email">  Jrodriguez@gmail.com  </p>
+            </ion-col>
+          </ion-row>
+            <ion-row>
+                <ion-col>
+                    <div class="hr"></div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <p class="modifier">  <b> MODIFIER MON MOT DE PASSE </b>  </p>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+      </div>
+      <ion-grid>
+          <ion-row>
+              <p class="mon_adresse"> MON ADRESSE</p>
+          </ion-row>
+          <ion-row>
+              <div class="adresse_bloc">
+                <ion-row>
+                    <ion-col>
+                     <p class="nomdos">  <b> James rodriguez </b>  </p> 
+                    </ion-col>
                     <ion-row>
-                        <p class="email">Email</p>
+                        <ion-icon class="pinceau_deux" name="pencil-outline"></ion-icon>
                     </ion-row>
-                    <ion-row>
-                        <p class="email_txt"> abouquety1@gmail.com</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="modifier_un"> Modifier </p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="age">Age</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="age_txt"> 22</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="modifier_deux"> Modifier </p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="location">Location</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="location_txt"> Moissy-Cramayel</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="modifier_trois"> Modifier </p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="mdp">Mot de passe</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="mdp_txt"> **********</p>
-                    </ion-row>
-                    <ion-row>
-                        <p class="modifier_quatre"> Modifier </p>
-                    </ion-row>
-                </div>
-
-            </ion-grid>
-            <p class="deconnexion" [routerLink]="['/login']"> Deconnexion </p>
-        </div>
-    </div>
-</ion-content>
-<ion-footer class="ion-no-border">
+                  </ion-row>
+                  <ion-row>
+                    <p class="adresse_un">234 Avenue des Lilas</p>
+                  </ion-row>
+                  <ion-row>
+                    <p class="adresse_deux">Moissy-Cramayel, 77550 </p>
+                  </ion-row>
+                  <ion-row>
+                    <p class="pays">France</p>
+                  </ion-row>
+              </div>
+          </ion-row>
+      </ion-grid>
+      <div class="deco_bloc">
+        <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/login']">SE DÉCONNECTER</button>  
+      </div>
+  </div>
+  </ion-content>
+  <ion-footer class="ion-no-border">
     <ion-toolbar class="footer">
         <!-- <ion-title>
         Click to Add Text
