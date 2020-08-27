@@ -1,257 +1,110 @@
 .main{
-    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
-    height: 100%;
-    width: 100%;
-    display: table;
-}
-.logo{
-    width: 85px;
-    position: absolute;
-    left: 36%;
-    top: 3%;
-}
+  background: lightgray;
+  height: 147vh;
+  width: 100%;
+  display: table;
 
-.panier{
-    position: absolute;
-    top: 12%;
-    left: 8%;
-    font-weight: bold;
-    color: #515C6F;
-}
+  .detail_vetement{
+      background: white;
+  }
 
-.background_pr{
-    background: #ffffff;
-    top: 27%;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    left: 12%;
-    margin-top: 105px;
-    margin-left: 30px;
-    margin-bottom: 27px;
+  .detail_produit{
+      background: white;
+      margin-top: 5px;
+  }
 
-}
-.background_prd{
-    background: #ffffff;
-    position: absolute;
-    top: 27%;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    left: 12%;
-    margin-top: 71px;
-
+  .slide_plus{
+      background: white;
+      margin-top: 5px;   
+  }
 }
 
 
+  .couleur{
+      color: #515C6F;
+  font-size: 12px;
+  font-weight: bold;
+  }
 
-.background_prt{
-    background: #ffffff;
-    position: absolute;
-    top: 27%;
-    height: 80px;
-    width: 80px;
-    border-radius: 40px;
-    left: 12%;
-    margin-top: 165px;
-}
+  .taille{
+      color: #515C6F;
+      opacity: 0.5;
+      font-size: 12px;
+      margin-left: 53px;
+  }
 
-.img_produit{
-    overflow: hidden;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
-    width: 66px;
-    height: 67px;
-    /* width: 42px; */
-    margin-left: 8px;
-    margin-top: 7px;
+  .couleur_rpn{
+      color: #515C6F;
+      font-size: 14px;
+  }
 
-}
+  .taille_rpn{
+      color: #515C6F;
+      font-size: 14px;
+  }
 
-.type_pr{
-    position: absolute;
-    top: 19%;
-    left: 39%;
-    color: #515C6F;
-    font-size: 14px;
-    font-weight: bold;
-}
+  .hr{
+      border-bottom: 1px solid lightgrey;
+      margin-top: -9px;
+      width: 98%;
+  }
 
-.taille_pr{
-    position: absolute;
-    top: 24%;
-    left: 42%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-.couleur_pr{
-    position: absolute;
-    top: 24%;
-    left: 49%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-
-.prix_pr{
-    position: absolute;
-    top: 28%;
-    left: 42%;
-    color: #707070;
-    font-size: 12px;
-}
-
-.type_prd{
-    position: absolute;
-    top: 60%;
-    left: 40%;
-    color: #515C6F;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.taille_prd{
-    position: absolute;
-    top: 65%;
-    left: 42%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-.couleur_prd{
-    position: absolute;
-    top: 65%;
-    left: 49%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-
-.prix_prd{
-    position: absolute;
-    top: 69%;
-    left: 42%;
-    color: #707070;
-    font-size: 12px;
-}
-
-.type_prt{
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    color: #515C6F;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.taille_prt{
-    position: absolute;
-    top: 45%;
-    left: 42%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-.couleur_prt{
-    position: absolute;
-    top: 45%;
-    left: 49%;
-    color: #515C6F;
-    font-size: 12px;
-}
-
-
-.prix_prt{
-    position: absolute;
-    top: 49%;
-    left: 42%;
-    color: #707070;
-    font-size: 12px;
-}
-ion-icon {
-    color: #515C6F;
+  .hrs{
+      border-left: 1px solid lightgrey;
+      margin-top: -9px;
+      width: 18%;  
+  }
+  
+  .btn{
+      width: 88%;
+      padding: 15px;
+      background: linear-gradient(360deg, #5055a0, #5055a0);
+      box-shadow: none;
+      display: block;
+      margin: 0px auto;
+      border-radius: 50px;
+      margin-bottom: 10%;
+      color: #fff;
+      margin-left: 14px;
   }
 
  
 
-  ion-buttons ion-button ion-icon.accueil {
-    margin-top: -13px;
-  }
 
-  ion-buttons ion-button ion-label.accueil {
-    margin-left: -2px;
+.livraison{
+  color: black;
+  font-size: 11px;
+  margin-top: 0px;
 }
 
-ion-label.active{
-  color: #250A8A;
+.guide_taille{
+  font-size: 11px;
+  color: black;
+  margin-top: 0px;
+
 }
 
-ion-icon.active{
-  color: #250A8A;
-  margin-top: -13px;
-  margin-right: 10px;
-}
 
-ion-title ion-buttons ion-button ion-icon {
-  margin-top: -13px;
-}
-
-ion-label {
-  color: grey;
-  position: absolute;
-  top: 74%;
-  font-size: 7px;
+ion-toolbar{
+  --color: black;
+  --background: white;
+  text-align: center;
 }
 
 ion-title{
-  margin-left: 53px;
+  font-size: 14px;
+}
+.txt_article{
+  color: grey;
+    font-size: 11px;
+    margin-left: 95px;
+}
+
+.prix {
+color: black;
 }
 
 
-
-  .hr {
-    border-bottom: 1px solid #727C8E;
-    margin: 10px 0;
-    margin-left: 28px;
-    margin-top: 175px;
-    width: 80%;
-    opacity: 0.2;
-  }
-
-  .total{
-    opacity: 0.5;
-    color: #515C6F;
-    margin-left: 28px;
-    font-size: 10px;
-  }
-
-  .livraison{
-    color: #727C8E;
-    margin-left: 28px;
-    margin-top: -12px;
-    font-size: 9px;
-  }
-
-.prix_total{
-    margin-left: 28px;
-    color: #515C6F;
-    font-weight: bold;
-    margin-top: -9px;
-    font-size: 14px;
-}
-
-.btn {
-    width: 57%;
-    padding: 15px;
-    background: linear-gradient(360deg, #5055a0, #5055a0);
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    border-radius: 50px;
-    margin-bottom: 10%;
-    color: #fff;
-    margin-left: 113px;
-    margin-top: -53px;
+img{
+  width: 2%;
 }
