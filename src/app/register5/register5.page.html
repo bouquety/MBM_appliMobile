@@ -1,14 +1,10 @@
 <ion-header>
   <ion-toolbar>
       <!-- Button back -->
-      <ion-buttons slot="start">
-          <ion-back-button defaultHref="register2"></ion-back-button>
-      </ion-buttons>
       <ion-title>Quizz - Fin</ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
-  <div class="main">
     <div class="container">
   
       <!-- <img src="../../assets/img/MBM-logo-white.png" class="img-slides" /> -->
@@ -28,11 +24,11 @@
             <span class="time-line__span_text">Fin</span>
         </div>
     </div>
-      <p class="msg_felicitation"> Félicitation </p>
-      <p class="msg_success"> Votre compte à bien été créer, veuillez appuyez ci-dessous pour accèder à votre sélection personalisé</p>
-      <button class="btn" [routerLink]="['/accueil']">Continuer</button>
+    <ion-label class="Felicitation"> Félicitation </ion-label> 
+    <img src="../../assets/img/design_party_graphic_design_tubik.png"/>
+      <ion-label>Votre compte à bien été créer, veuillez appuyez ci-dessous pour accèder à votre sélection personalisé</ion-label>
+      <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/accueil-chic']">CONTINUER</ion-button>
   
     </div>
-  </div>
   </ion-content>
   
