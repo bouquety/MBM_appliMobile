@@ -23,57 +23,38 @@
               <span class="time-line__span_text">Fin</span>
           </div>
       </div>
-      <ion-label>  Avec quelle coupe vous sentez-vous le plus à l'aise ? 
-      </ion-label>
+    
       <ion-grid> 
         <ion-row>
           <ion-list>
-            <ion-radio-group>
-              <ion-list-header>
-                <ion-label>
-                  Haut
-                </ion-label>
-              </ion-list-header>
-              <ion-item>
-                <ion-label>Près du corps</ion-label>
-                <ion-radio></ion-radio>
-              </ion-item>
+            <ion-list-header>
+              <ion-label>
+                Avec quelle coupe vous sentez-vous le plus à l'aise ? 
+              </ion-label>
+            </ion-list-header>
           
-              <ion-item>
-                <ion-label>Droit</ion-label>
-                <ion-radio value="duesenberg"></ion-radio>
-              </ion-item>
-
-              <ion-item>
-                <ion-label>Ample</ion-label>
-                <ion-radio></ion-radio>
-              </ion-item>
-            </ion-radio-group>
-            </ion-list>
-            <ion-list>
-              <ion-radio-group>
-                <ion-list-header>
-                  <ion-label>
-                    Bas
-                  </ion-label>
-                </ion-list-header>
-                <ion-item>
-                  <ion-label>Près du corps</ion-label>
-                  <ion-radio></ion-radio>
-                </ion-item>
-            
-                <ion-item>
-                  <ion-label>Droit</ion-label>
-                  <ion-radio value="duesenberg"></ion-radio>
-                </ion-item>
-  
-                <ion-item>
-                  <ion-label>Ample</ion-label>
-                  <ion-radio></ion-radio>
-                </ion-item>
-              </ion-radio-group>
-              </ion-list>
+            <ion-item>
+              <ion-label>Haut</ion-label>
+              <ion-select placeholder="Coupe">
+                <ion-select-option value="S">Près du corps</ion-select-option>
+                <ion-select-option value="M">Droit</ion-select-option>
+                <ion-select-option value="L">Ample</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Bas</ion-label>
+              <ion-select placeholder="Coupe">
+                <ion-select-option value="S">Près du corps</ion-select-option>
+                <ion-select-option value="M">Droit</ion-select-option>
+                <ion-select-option value="L">Ample</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+          </ion-list>
         </ion-row>
+
+
         <ion-row>
           <ion-list>
             <ion-list-header>
@@ -118,6 +99,6 @@
           </ion-item>
         </ion-row>
       </ion-grid>
-          <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/register5']">CONTINUER</ion-button>
+          <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/register5']">CONTINUER</button>
   </div>
 </ion-content>

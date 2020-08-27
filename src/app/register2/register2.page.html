@@ -1,12 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+      <!-- Button back -->
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+      </ion-buttons>
+      <ion-title>Inscription  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content fullscreen>
     <div class="container">
-        <ion-toolbar>
-            <!-- Button back -->
-            <ion-buttons slot="start">
-                <ion-back-button defaultHref="landing"></ion-back-button>
-            </ion-buttons>
-            <ion-title>Inscription</ion-title>
-        </ion-toolbar>
         <div class="time-line">
             <div class="time-line__wrapper">
                 <span class="time-line__span ">1</span>
@@ -42,19 +45,19 @@
               </ion-row>
               <ion-row>
                 <ion-col size="6">
-                  <img src="../../assets/img/joggo.jpg" [routerLink]="['/vestes-chic']" />
+                  <img src="../../assets/img/ahaha.jpg" [routerLink]="['/vestes-chic']" />
                   <ion-item>
                     <ion-checkbox color="secondary"></ion-checkbox>
                   </ion-item>
                 </ion-col>
                 <ion-col size="6">
-                  <img src="../../assets/img/testo.jpg" [routerLink]="['/vestes-chic']" />
+                  <img src="../../assets/img/Casual.jpg" [routerLink]="['/vestes-chic']" />
                   <ion-item>
                     <ion-checkbox color="secondary"></ion-checkbox>
                   </ion-item>
                 </ion-col>
               </ion-row>
         </ion-grid>
-            <ion-button type="submit" fill="solid" expand="full" [routerLink]="['/register3']">CONTINUER</ion-button>
+            <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/register3']">CONTINUER</button>
     </div>
 </ion-content>

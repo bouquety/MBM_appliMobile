@@ -1,164 +1,42 @@
 .main{
-    background: linear-gradient(rgb(202, 199, 241) ,rgb(202, 199, 241), rgb(222, 208, 253) 33.33%, rgb(222, 208, 253) 90%) !important;
-    height: 115vh;
-    width: 100%;
-    display: table;
+    background: lightgray;
+  height: 100%;
+  width: 100%;
+  display: table;
+
+  .identifiant_bloc{
+    background: white;
 }
-.logo{
-    width: 85px;
-    position: absolute;
-    left: 36%;
-    top: 3%;
 }
-
-.PP{
-    position: absolute;
-    left: 36%;
-    top: 22%;
-    border-radius: 40px;
-    width: 80px;
-    height: 80px;
+p{
+    color: black;
 }
-
-.name{
-    position: absolute;
-    top: 35%;
-    left: 21%;
-    font-size: 29px;
-    color: #515C6F;
+.pinceau_un{
+    color: #564D85;
+    margin-left: 224px;
+    /* width: 121%; */
+    width: 65px;
+    margin-top: 9px;
 }
-
-.info{
-    padding-bottom: 10px;
-    position: absolute;
-    top: 49%;
-    left: 15%;
-    font-size: 11px;
-    color: #223269;
-    border-bottom: 2px solid #9292EA;
-}
-
-.gout{
-    position: absolute;
-    top: 49%;
-    left: 74%;
-    font-size: 11px;
-    color: #223269;
-    opacity: 0.3;
-}
-
-.hr{
-    border-bottom: 1.8px solid #ffff;
-    margin: 10px 0;
-    margin-left: 28px;
-    margin-top: 266px;
-    width: 80%;
-
-}
-
-.background_info{
-    background: #ffffff;
-    position: absolute;
-    top: 48%;
-    height: 57%;
-    width: 91%;
-    left: 4%;
-    margin-top: 71px;
-
-}
-
-.email{
-    color: #223269;
-    opacity: 0.3;
-    font-size: 12px;
-    margin-left: 17px;
-}
-
-.email_txt{
-    color: #242134;
-    font-size: 13px;
-    margin-top: -4px;
-    margin-left: 17px;
-}
-
-.modifier_un{
-    color: #9292EA;
-    font-size: 11px;
-    margin-left: 206px;
-    margin-top: -42px;
-}
-
-.hr_deux{
-    border-bottom: 1px solid grey;
-    margin: 10px 0;
-    margin-left: 28px;
-    width: 80%;
-
-}
-
-.age{
-    color: #223269;
-    opacity: 0.3;
-    font-size: 12px;
-    margin-left: 17px;
-    margin-top: 14px;
-
-}
-
-.age_txt{
-    color: #242134;
-    font-size: 13px;
-    margin-top: 0px;
-    margin-left: 17px;
-}
-
-.modifier_deux{
-    color: #9292EA;
-    font-size: 11px;
-    margin-left: 206px;
-    margin-top: -42px;
-}
-
-.location{
-    color: #223269;
-    opacity: 0.3;
-    font-size: 12px;
-    margin-left: 17px;
-}
-
-.location_txt{
-    color: #242134;
-    font-size: 13px;
-    margin-left: 17px;
+p.Nom{
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 0px;
     margin-top: 0px;
 }
 
-.modifier_trois{
-    color: #9292EA;
-    font-size: 11px;
-    margin-left: 206px;
-    margin-top: -42px;
-}
-
-.mdp{
-    color: #223269;
-    opacity: 0.3;
-    font-size: 12px;
-    margin-left: 17px;
-}
-
-.mdp_txt{
-    color: #242134;
+p.email{
+    text-align: center;
     font-size: 13px;
-    margin-left: 17px;
-    margin-top: 0px;
+    margin-top: 2px;
 }
 
-.modifier_quatre{
-    color: #9292EA;
-    font-size: 11px;
-    margin-left: 206px;
-    margin-top: -42px;
+p.modifier{
+    margin-top: 0px;
+    color: #564D85;
+    text-align: center;
+    font-size: 12px;
 }
 
 ion-icon {
@@ -201,12 +79,77 @@ ion-title{
   margin-left: 53px;
 }
 
-  .deconnexion {
-    position: absolute;
-    top: 5%;
-    left: 72%;
-    color: #242134;
-    font-size: 13px;
-    opacity: 0.3;
+ion-title.titre_tittle{
+    font-size: 12px;
+    margin-left: 87px;
 
-  }
+}
+
+.hr{
+    border-bottom: 1px solid lightgrey;
+        margin-top: 0px;
+        width: 98%;
+}
+p.mon_adresse{
+    font-size: 10px;
+    margin-left: 10px;
+    margin-bottom: 3px;
+}
+.adresse_bloc{
+    background: white;
+    margin-top: 5px;
+    margin-left: 24px;
+    width: 85%;
+}
+
+p.nomdos{
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 12px;
+    margin-bottom: 0px;
+}
+
+.adresse_un{
+    
+    font-size: 14px;
+    color: #515C6F;
+    margin-top: 12px;
+    margin-bottom: 0px;
+    margin-left: 17px;
+
+}
+
+
+.adresse_deux{
+    margin-top: 7px;
+    font-size: 14px;
+    color: #515C6F;
+    margin-bottom: 0px;
+    margin-left: 17px;
+
+}
+
+.pays{
+    margin-top: 7px;
+    font-size: 14px;
+    color: #515C6F;
+    margin-left: 17px;
+}
+
+.deco_bloc{
+    background: black;
+    width: 100%;
+    color: white;
+    margin-top: 34px;
+}
+
+.pinceau_deux{
+    color: #564D85;
+    margin-top: 10px;
+}
+
+.btn{
+    color: white;
+    background: black;
+    margin-left: 85px;
+}
