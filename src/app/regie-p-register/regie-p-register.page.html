@@ -1,30 +1,63 @@
-<ion-content>
-  <div class="main">
-    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+<ion-header>
+  <ion-toolbar>
+      <!-- Button back -->
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="landing"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Inscription  </ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-    <div class="time-line">
-      <div class="time-line__wrapper">
-          <span class="time-line__span active">1</span>
-          <span class="time-line__span_text">Infos</span>
+<ion-content fullscreen>
+  <div class="container">
+      
+      <div class="time-line">
+          <div class="time-line__wrapper">
+              <span class="time-line__span active">1</span>
+              <span class="time-line__span_text">Infos</span>
+          </div>
+          <hr class="time-line__hr">
+          <div class="time-line__wrapper">
+              <span class="time-line__span ">2</span>
+              <span class="time-line__span_text">Cible</span>
+          </div>
+          <hr class="time-line__hr">
+          <div class="time-line__wrapper">
+              <span class="time-line__span">3</span>
+              <span class="time-line__span_text">Fin</span>
+          </div>
       </div>
-      <hr class="time-line__hr">
-      <div class="time-line__wrapper">
-          <span class="time-line__span ">2</span>
-          <span class="time-line__span_text">Cible</span>
-      </div>
-      <hr class="time-line__hr">
-      <div class="time-line__wrapper">
-          <span class="time-line__span">3</span>
-          <span class="time-line__span_text">Fin</span>
-      </div>
-  </div>
-    <ion-input placeholder="Nom de la société"> </ion-input>
-    <ion-input placeholder="Nom de la campagne"> </ion-input>
-    <ion-input placeholder="Mot de passe" type="password"> </ion-input>
-    <ion-input placeholder="Confirmation mot de passe" type="password"> </ion-input>
+      <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
+        <ion-item lines="full">
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+          <ion-item lines="full">
+              <ion-label position="floating">Nom de la société</ion-label>
+              <ion-input type="text" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Nom de la campagne</ion-label>
+              <ion-input type="text" required></ion-input>
+            </ion-item>    
+            <ion-item lines="full">
+              <ion-label position="floating">Mot de Passe</ion-label>
+              <ion-input type="password" required></ion-input>
+            </ion-item>
+            <ion-item lines="full">
+              <ion-label position="floating">Confirmation mot de passe</ion-label>
+              <ion-input type="password" required></ion-input>
+            </ion-item>
+              
+              
+              
+             <!-- Nom.Email.mot de passe.confirmation mot de passe. -->
 
-    <button class="btn" [routerLink]="['/regie-p-registerdeux']">Continuer</button>
-
+          <!--shape="round"-->
+          <!-- <div class="wrapper__btn">
+              <ion-button type="submit" fill="solid" expand="full" (click)="goRegister2()">Connection</ion-button>
+          </div> -->
+      </form>
+          <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/regie-p-registerdeux']">CONTINUER</button>
   </div>
 </ion-content>

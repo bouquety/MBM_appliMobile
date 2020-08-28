@@ -1,102 +1,123 @@
-<ion-content>
-  <div class="main">
-    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
+<ion-content fullscreen>
+  <div class="container">
+      <ion-toolbar>
+          <!-- Button back -->
+          <ion-buttons slot="start">
+              <ion-back-button defaultHref="landing"></ion-back-button>
+          </ion-buttons>
+          <ion-title>Quizz - Fin</ion-title>
+      </ion-toolbar>
+      <div class="time-line">
+          <div class="time-line__wrapper">
+              <span class="time-line__span ">1</span>
+              <span class="time-line__span_text">Infos personnelles</span>
+          </div>
+          <hr class="time-line__hr">
+          <div class="time-line__wrapper">
+              <span class="time-line__span active">2</span>
+              <span class="time-line__span_text">Quizz</span>
+          </div>
+          <hr class="time-line__hr">
+          <div class="time-line__wrapper">
+              <span class="time-line__span">3</span>
+              <span class="time-line__span_text">Fin</span>
+          </div>
+      </div>
+    
+      <ion-grid> 
+        <ion-row>
+          <ion-list>
+            <ion-list-header>
+              <ion-label>
+                Quel est votre audience ? 
+              </ion-label>
+            </ion-list-header>
+          
+            <ion-item>
+              <ion-label>Age</ion-label>
+              <ion-select placeholder="Age">
+                <ion-select-option value="S">10-17</ion-select-option>
+                <ion-select-option value="M">18-25</ion-select-option>
+                <ion-select-option value="L">26-40</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Lieu</ion-label>
+              <ion-select placeholder="Pays">
+                <ion-select-option value="S">France</ion-select-option>
+                <ion-select-option value="M">Europe</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+          </ion-list>
+        </ion-row>
 
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-    <div class="time-line">
-      <div class="time-line__wrapper">
-          <span class="time-line__span ">1</span>
-          <span class="time-line__span_text">Infos</span>
-      </div>
-      <hr class="time-line__hr">
-      <div class="time-line__wrapper">
-          <span class="time-line__span active">2</span>
-          <span class="time-line__span_text">Cible</span>
-      </div>
-      <hr class="time-line__hr">
-      <div class="time-line__wrapper">
-          <span class="time-line__span">3</span>
-          <span class="time-line__span_text">Fin</span>
-      </div>
+        <ion-row>
+          <ion-list>
+            <ion-list-header>
+              <ion-label>
+                Quelle est votre gamme de vêtement ?
+              </ion-label>
+            </ion-list-header>
+          
+            <ion-item>
+              <ion-label>Catégorie</ion-label>
+              <ion-select placeholder="Taille">
+                <ion-select-option value="S">Casual</ion-select-option>
+                <ion-select-option value="M">Chic</ion-select-option>
+                <ion-select-option value="L">Street</ion-select-option>
+                <ion-select-option value="XL">Décontracter</ion-select-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+        </ion-row>
+
+        <ion-row>
+          <ion-list>
+            <ion-list-header>
+              <ion-label>
+                Quelle type de taille ?
+              </ion-label>
+            </ion-list-header>
+          
+            <ion-item>
+              <ion-label>Chemise, T-shirt, Sweat</ion-label>
+              <ion-select placeholder="Taille">
+                <ion-select-option value="S">S</ion-select-option>
+                <ion-select-option value="M">M</ion-select-option>
+                <ion-select-option value="L">L</ion-select-option>
+                <ion-select-option value="XL">XL</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+            <ion-item>
+              <ion-label>Jeans, pantalon, short</ion-label>
+              <ion-select placeholder="Taille">
+                <ion-select-option value="S">S</ion-select-option>
+                <ion-select-option value="M">M</ion-select-option>
+                <ion-select-option value="L">L</ion-select-option>
+                <ion-select-option value="XL">XL</ion-select-option>
+              </ion-select>
+            </ion-item>
+          
+          </ion-list>
+        </ion-row>
+        <ion-row>
+          <ion-label class="mensuration">Et votre tranche de prix ?</ion-label>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label>Prix</ion-label>
+            <ion-select placeholder="Prix" class="prix_select">
+              <ion-select-option value="S"> <=25€ </ion-select-option>
+              <ion-select-option value="M"> 26€ - 45€</ion-select-option>
+              <ion-select-option value="L"> 46€ - 75€ </ion-select-option>
+              <ion-select-option value="XL"> >=76€ </ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-row>
+      </ion-grid>
+          <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/regie-p-registertrois']">CONTINUER</button>
   </div>
-    <p class="q_coupe"> Quel est votre audience ?</p>
-    <ion-grid>
-      <ion-row>
-        <p class="Age">Age</p>
-      </ion-row>
-      <ion-row>
-        <ion-select placeholder="Age">
-        <ion-select-option value="S">10-17</ion-select-option>
-        <ion-select-option value="M">18-25</ion-select-option>
-        <ion-select-option value="L">26-40</ion-select-option>
-      </ion-select>
-</ion-row>
-<ion-row>
-  <p class="Lieu">Lieu</p>
-</ion-row>
-<ion-row>
-  <ion-select placeholder="Lieu">
-  <ion-select-option value="France">France</ion-select-option>
-  <ion-select-option value="Europe">Europe</ion-select-option>
-</ion-select>
-
-</ion-row>
-      <ion-row>
-        <p class="categorie">  Catégorie </p>
-      </ion-row>
-      <ion-radio-group>
-      <ion-row class="q_top">
-        <ion-label>Casual</ion-label>
-        <ion-radio value="Casual"></ion-radio>
-        <ion-label>Chic</ion-label>
-        <ion-radio value="Medium"></ion-radio>
-        <ion-label>Street</ion-label>
-        <ion-radio value="Large"></ion-radio>
-        <ion-label>Décontracter</ion-label>
-        <ion-radio value="Large"></ion-radio>
-      </ion-row>
-      </ion-radio-group>
-
-      
-<ion-row>
-  <p class="chemise_tshirt_">Chemise, T-shirt, Sweat...</p>
-</ion-row>
-<ion-row>
-        <ion-select placeholder="Taille">
-        <ion-select-option value="S">S</ion-select-option>
-        <ion-select-option value="M">M</ion-select-option>
-        <ion-select-option value="L">L</ion-select-option>
-        <ion-select-option value="XL">XL</ion-select-option>
-      </ion-select>
-    
-</ion-row>
-
-<ion-row>
-  <p class="chemise_tshirt_">Jeans, pantalons, short...</p>
-</ion-row>
-<ion-row>
-        <ion-select placeholder="Taille">
-        <ion-select-option value="S">S</ion-select-option>
-        <ion-select-option value="M">M</ion-select-option>
-        <ion-select-option value="L">L</ion-select-option>
-        <ion-select-option value="XL">XL</ion-select-option>
-      </ion-select>
-    
-</ion-row>
-
-<ion-row>
-  <p class="prix">Prix</p>
-</ion-row>
-<ion-row>
-        <ion-select placeholder="Prix">
-        <ion-select-option value="1">S</ion-select-option>
-        <ion-select-option value="2">M</ion-select-option>
-        <ion-select-option value="3">L</ion-select-option>
-        <ion-select-option value="4">XL</ion-select-option>
-      </ion-select>
-    
-</ion-row>
-    </ion-grid>
-    <button class="btn" [routerLink]="['/regie-p-registertrois']">Continuer</button>
-</div>  
 </ion-content>

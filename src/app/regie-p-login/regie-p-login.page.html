@@ -1,20 +1,34 @@
+
 <ion-content>
-  <div class="container">
-    <ion-icon name="arrow-back-outline" class="arrowback" (click)='goBack()'></ion-icon>
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-    <ion-input placeholder="Société">   </ion-input>
-    <ion-input placeholder="Mot de passe" type="password">     </ion-input>
-    <p class="mdp">Mot de passe oublié</p>
+  <div class="wrapper">
+      <div class="wrap__img">
+          <img src="../../assets/img/logindosimg.jpg" class="img-slides" />
+      </div>
+      <p class="MBM"> <b> MBM</b></p>
+      <p class="txt_MBM"> Shoppez avec plaisir</p>
 
-    
-  
-  <button class="btn" [routerLink]="['/regi-p-accueil']">Connexion</button>
-  <p class="ou"> Ou </p>
-  <div class="hr"> </div>
-  <p class="reseaux">Connexion avec les réseaux sociaux</p>  
-  <ion-icon name="logo-facebook" class="facebook"></ion-icon>
-  <ion-icon name="logo-google" class="google"></ion-icon>
-  <ion-icon name="logo-twitter" class="twitter"></ion-icon>
+      <form id="ngForm" class="login__form" (ngSubmit)="doLogin()" method="post">
+          <div class="wrapper_item">
+              <ion-item>
+                  <ion-label class="login__label" position="floating">Email</ion-label>
+                  <ion-input class="login__input" [ngModel]="email" type="email" name="email"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label class="login__label" position="floating">Mot de Passe</ion-label>
+                  <ion-input class="login__input" [ngModel]="password" type="password" name="password"></ion-input>
+              </ion-item>
+              <!--<p class="mdp__forgot" text-right>Mot de passe oublié?</p>-->
+              <a class="mdp__forgot small-text" [routerLink]="['/password-lost']">Mot de passe oublié  ?</a>
+          </div>
 
-</div>  
+          <!--shape="round"-->
+          <div class="wrapper__btn">
+              <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/regi-p-accueil']">SE CONNECTER</button>
+              <!--<p class="no__account" text-center>Pas de compte? S'inscrire?</p>-->
+              <a class="no__account small-text" [routerLink]="['/regie-p-register']">Pas de compte? S'inscrire?</a>
+              <!--<ion-button expand="full" (click)="registerModal()">Inscription</ion-button>-->
+          </div>
+      </form>
+      
+  </div>
 </ion-content>

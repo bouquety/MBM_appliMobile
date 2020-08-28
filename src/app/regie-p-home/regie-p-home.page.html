@@ -1,13 +1,25 @@
-<ion-content>
+<ion-content fullscreen>
   <div class="container">
-    <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
-  <p>Développez votre activité grâce à des outils 
-    professionnels gratuits, des statistiques qui vous aident
-    à comprendre qui sont vos cibles.</p>
-  
-  <button class="btn" [routerLink]="['/regie-p-register']">Démarrez l'expérience</button>
-  <button class="btn" [routerLink]="['/regie-p-login']">Connexion</button>
-  <button class="btn" [routerLink]="['/home']">MBM Shop</button>
+      <ion-slides>
 
-</div>  
+          <ion-slide>
+            <div class="slide">
+              <img src="../../assets/img/slideun.png"/>
+              <h2>Bienvenue</h2>
+              <p> <b>Développez votre activité </b> grâce à des outils 
+                professionnels gratuits, des statistiques qui vous aident
+                à comprendre qui sont vos cibles.</p>
+              <p [routerLink]="['/login']" class="connexion"> Dèja un compte ? <b> connectez-vous ! </b> </p>
+            </div>
+          </ion-slide>
+  
+          <ion-slide>
+            <img src="../../assets/img/slidetrois.png"/>
+            <h2>Prêt à commencer ?</h2>
+            <ion-button fill="clear" [routerLink]="['/regie-p-register']" >Continue <ion-icon slot="end" name="arrow-forward"></ion-icon></ion-button>
+            <p [routerLink]="['/regie-p-login']" class="connexion"> Dèja un compte ? <b> connectez-vous ! </b> </p>
+          </ion-slide>
+  
+        </ion-slides>
+  </div>
 </ion-content>

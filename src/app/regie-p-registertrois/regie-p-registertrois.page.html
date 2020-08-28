@@ -1,8 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+      <!-- Button back -->
+      <ion-title>Quizz - Fin</ion-title>
+  </ion-toolbar>
+</ion-header>
 <ion-content>
-  <div class="main">
     <div class="container">
   
-      <img src="../../assets/img/MBM-logo-white.png" class="img-slides" />
+      <!-- <img src="../../assets/img/MBM-logo-white.png" class="img-slides" /> -->
       <div class="time-line">
         <div class="time-line__wrapper">
             <span class="time-line__span active">1</span>
@@ -19,10 +24,11 @@
             <span class="time-line__span_text">Fin</span>
         </div>
     </div>
-      <p class="msg_felicitation"> Félicitation </p>
-      <button class="btn" [routerLink]="['/regi-p-accueil']">Continuer</button>
+    <ion-label class="Felicitation"> Félicitation </ion-label> 
+    <img src="../../assets/img/design_party_graphic_design_tubik.png"/>
+      <ion-label>Votre compte à bien été créer, veuillez appuyez ci-dessous pour accèder à vos campagnes</ion-label>
+      <button class="btn" type="submit" fill="solid" expand="full" [routerLink]="['/regi-p-accueil']">CONTINUER</button>
   
     </div>
-  </div>
   </ion-content>
   

@@ -1,87 +1,104 @@
-.img-slides {
-    width: 90%;
-    height: auto;
-    display: block;
-    padding: 20px;
-}
-.container{
-    background: linear-gradient(197deg, rgb(116, 91, 185) 0%, rgba(116, 91, 185) 13.5%, rgba(116, 91, 185) 33.33%, rgb(29, 23, 44) 100%) !important;
-    height: 100%;
+.wrapper {
+    background: white !important;
     width: 100%;
-    display: table;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
 
+    .wrap__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vw;
+        border: 1px solid #ffffff;
+        border-radius: 50% 50%;
+    }
+    .login__form {
+        margin: 50px 0 0 0;
+        // border: #ffffff 1px solid;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // min-height: 100vw;
+        a {
+            color: #ffffff;
+            font-size: x-small;
+            display: block;
+            margin-top: 5px;
+            // border: solid 1px red;
+            // text-align: center;
+        }
+        .wrapper_item {
+            margin-top: -68px;
+            // margin: 0 50px 0 0;
+            // border: #ffffff 1px solid;
+            ion-item {
+                width: 80vw;
+    /* border: #ffffff 1px solid; */
+    --background: !important;
+    --color: #ffffff;
+    --highlight-background: #ffffff;
+    margin-top: 10px;
+               
+                
+            }
+            ion-label{
+                color: grey;
+            }
+            ion-input{
+                color: black;
+            }
+            .mdp__forgot {
+                color: #564D85;
+                text-align: right;
+            }
+        }
+        .wrapper__btn {
+            margin-top: 25px;
+            // border: #ffffff 1px solid;
+            .no__account {
+                color: #564D85;
+                text-align: center;
+            }
+           
+                .btn {
+                    width: 44vh;
+                    padding: 15px;
+                    background: #564D85;
+                    --background: #564D85;
+                    box-shadow: none;
+                    display: block;
+                    margin: 0px auto;
+                    border-radius: 50px;
+                    margin-bottom: 10%;
+                    color: #fff;
+                    margin-left: 14px;
+                  
+                  }
+             
+        }
+    }
 }
-.arrowback{
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    font-size: 22px;
-  }
-p {
-    display: block;
-    padding: 10px;
-    font-size: small;
-    color: white;
-    height: 40px;
-    font-family: 'Poppins', sans-serif;
 
-}
-ion-input{
-    width: 90%;
-    padding: 5px;
-    background: #07070741;
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    border-radius: 50px;
-    margin-bottom: 10%;
-    font-size: 10px;
-}
-.btn {
-    width: 90%;
-    padding: 15px;
-    background: linear-gradient(360deg, #5055a0, #5055a0);
-    font-family: "Poppins";
-    box-shadow: none;
-    display: block;
-    margin: 0px auto;
-    border-radius: 50px;
-    margin-bottom: 10%;
-    color: #fff;
-}
-.hr {
-    border-bottom: 1px solid #ccc;
-    margin: 10px 0;
-    margin-left: 87px;
-    width: 40%;
-  }
-
-
-.mdp{
-    color: #DBD9D9;
-    margin-left: 180px;
-    font-size: xx-small;
+img{
+    border: 0;
+    width: 111%;
+    margin-top: 111px !important;
 }
 
-.ou {
-      color: white;
-      margin: -10px;
-    margin-left: 130px;
-    font-size: xx-small;
-}
-.reseaux{
-    color: white;
-    margin: -10px;
-    margin-left: 64px;
-    font-size: xx-small;
+.MBM{
+    color: grey;
+    margin-top: 75px;
 }
 
-.facebook{
-    margin-left: 80px;
-    margin-right: 40px;
-}
-
-.google{
-    margin-right: 40px;
+.txt_MBM{
+    color: grey;
+    margin-top: -10px;
 }
